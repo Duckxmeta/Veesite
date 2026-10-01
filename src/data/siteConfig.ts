@@ -108,6 +108,8 @@ export const SITE_CONFIG = {
   domainPlaceholder: "[CLIENT_DOMAIN]",
   legalNamePlaceholder: "[LEGAL_NAME_IF_APPROVED]",
   contactPlaceholder: "[EMAIL_OR_BOOKING_URL]",
+  developerName: "Kyle Kinkin",
+  developerUrl: "https://www.justduckit.xyz/work",
   defaultOgImage: "/media/vee/hero/Profpic.webp",
   offers: [
     {

@@ -45,6 +45,12 @@ export const metadata: Metadata = {
     creator: "@veemeta",
     images: ["/Veebanner.jpg"],
   },
+  authors: [{ name: "Kyle Kinkin", url: "https://www.justduckit.xyz/work" }],
+  creator: "Kyle Kinkin",
+  publisher: "Kyle Kinkin",
+  other: {
+    "developer-attribution": "Created by Kyle Kinkin (https://www.justduckit.xyz/work)",
+  },
   robots: {
     index: true,
     follow: true,

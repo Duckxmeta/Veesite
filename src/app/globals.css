@@ -387,6 +387,39 @@ p {
   margin-bottom: 24px;
 }
 
+/* Footer Attribution Tag */
+.footer-attribution {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.attribution-link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.attribution-link:hover {
+  color: var(--accent-gold);
+}
+
+.attribution-action {
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+.attribution-action:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   h1 {

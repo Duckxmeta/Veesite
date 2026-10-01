@@ -56,6 +56,29 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+
+      <div className="container footer-attribution">
+        <p style={{ margin: 0 }}>
+          Website created by{" "}
+          <a
+            href={SITE_CONFIG.developerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="attribution-link"
+          >
+            {SITE_CONFIG.developerName}
+          </a>
+          {" "}— Want a custom website built?{" "}
+          <a
+            href={SITE_CONFIG.developerUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="attribution-action"
+          >
+            Get in touch &rarr;
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
