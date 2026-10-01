@@ -5,6 +5,10 @@ export interface Article {
   date: string;
   readTime: string;
   answerLead: string;
+  image: string;
+  imageAlt: string;
+  width: number;
+  height: number;
   content: string[];
 }
 
@@ -172,6 +176,10 @@ export const SEED_ARTICLES: Article[] = [
     date: "2026-09-30",
     readTime: "5 min read",
     answerLead: "Maintaining brand autonomy requires grounding identity in clear principles rather than bending core positions to suit temporary audience feedback.",
+    image: "/media/vee/card/Profpic.webp",
+    imageAlt: "Vee, Chief Roar Officer at Doginal Dogs, smiling outdoors in a gold sequined dress.",
+    width: 800,
+    height: 800,
     content: [
       "Audience capture occurs when a public creator or leader incrementally shifts their message, tone, and core beliefs to satisfy the immediate desires or outrage of their online followers. Over time, the creator loses autonomy, becoming a prisoner to audience expectations rather than a leader of community vision.",
       "Avoiding audience capture requires a deliberate framework grounded in fixed values, clear boundaries, and long-term perspective. In Vee's public work, this balance is maintained through a steadfast commitment to personal principles ('locking in'), faith, and core economic truths such as Bitcoin's fixed supply.",
@@ -187,6 +195,10 @@ export const SEED_ARTICLES: Article[] = [
     date: "2026-01-17",
     readTime: "4 min read",
     answerLead: "This briefing by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, analyzes Canadian Prime Minister Mark Carney's historic diplomatic visit to Qatar and shifting international trade dynamics in the Persian Gulf.",
+    image: "/media/vee/card/Veebanner.webp",
+    imageAlt: "Vee, Chief Roar Officer at Doginal Dogs, pastel color grid banner.",
+    width: 800,
+    height: 266,
     content: [
       "In this New World Order Daily Briefing, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, analyzes Canadian Prime Minister Mark Carney's historic arrival in Qatar on January 17th. This diplomatic visit marks the first time a sitting Canadian prime minister has visited the Persian Gulf nation, taking place amid security considerations regarding neighboring Iran.",
       "The bilateral delegation in Doha follows a diplomatic tour to China that set the stage for a new trade deal, stirring debate over security concerns and national economic priorities. Prime Minister Carney and the Liberal Party delegation have undertaken this international tour to position Canada as an attractive destination for global capital.",

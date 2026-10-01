@@ -228,6 +228,18 @@ export default function HomePage() {
               {latestArticles.map((article) => (
                 <article key={article.slug} className="card">
                   <div>
+                    <Link href={`/articles/${article.slug}`} style={{ display: "block", marginBottom: "16px" }}>
+                      <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
+                        <Image
+                          src={article.image}
+                          alt={article.imageAlt}
+                          width={article.width}
+                          height={article.height}
+                          loading="lazy"
+                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        />
+                      </div>
+                    </Link>
                     <div className="card-header">
                       <span className="badge">{article.category}</span>
                       <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>

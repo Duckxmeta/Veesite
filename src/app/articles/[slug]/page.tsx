@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { SEED_ARTICLES, SITE_CONFIG } from "@/data/siteConfig";
 import JsonLd from "@/components/JsonLd";
 
@@ -31,6 +32,14 @@ export function generateMetadata({ params }: ArticlePageProps) {
       type: "article",
       publishedTime: article.date,
       authors: [SITE_CONFIG.displayName],
+      images: [
+        {
+          url: article.image,
+          width: article.width,
+          height: article.height,
+          alt: article.imageAlt,
+        },
+      ],
     },
   };
 }
@@ -49,6 +58,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
     datePublished: article.date,
     dateModified: article.date,
     description: article.answerLead,
+    image: `https://[CLIENT_DOMAIN]${article.image}`,
     author: {
       "@type": "Person",
       name: SITE_CONFIG.displayName,
@@ -81,6 +91,22 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
               <span>{article.readTime}</span>
             </div>
           </div>
+
+          {article.image && (
+            <div style={{ margin: "24px 0 32px", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
+              <Image
+                src={article.image}
+                alt={article.imageAlt}
+                width={article.width}
+                height={article.height}
+                priority
+                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+              />
+              <p style={{ padding: "8px 16px", background: "var(--bg-surface)", margin: 0, fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
+                {article.imageAlt}
+              </p>
+            </div>
+          )}
 
           <div className="answer-lead">
             <p>
