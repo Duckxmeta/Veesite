@@ -1,0 +1,61 @@
+import Link from "next/link";
+import { SITE_CONFIG } from "@/data/siteConfig";
+
+export default function Footer() {
+  return (
+    <footer className="site-footer" role="contentinfo">
+      <div className="container footer-content">
+        <div>
+          <p style={{ margin: 0, fontWeight: 600, color: "var(--text-primary)" }}>
+            {SITE_CONFIG.displayName} ({SITE_CONFIG.handle})
+          </p>
+          <p style={{ margin: 0, fontSize: "0.85rem" }}>
+            Chief Roar Officer at{" "}
+            <a
+              href={SITE_CONFIG.doginalDogsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="descriptive-link"
+            >
+              Doginal Dogs
+            </a>
+            . Domain:{" "}
+            <span className="placeholder-box">{SITE_CONFIG.domainPlaceholder}</span>
+          </p>
+        </div>
+        <ul className="footer-links">
+          <li>
+            <a
+              href={SITE_CONFIG.xUrl}
+              target="_blank"
+              rel="noopener noreferrer me"
+              className="footer-link"
+            >
+              X (@veemeta)
+            </a>
+          </li>
+          <li>
+            <a
+              href={SITE_CONFIG.doginalDogsUrl}
+              target="_blank"
+              rel="noopener noreferrer sameAs"
+              className="footer-link"
+            >
+              Doginal Dogs
+            </a>
+          </li>
+          <li>
+            <Link href="/sitemap.xml" className="footer-link">
+              Sitemap
+            </Link>
+          </li>
+          <li>
+            <a href="/llms.txt" className="footer-link">
+              llms.txt
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+}
