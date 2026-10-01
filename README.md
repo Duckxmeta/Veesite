@@ -34,6 +34,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article11.jpg` | 1024 × 409 px | Article: AI Shark Tank: Product Critics | `"Pixel art banner featuring Vee with sunglasses and speech bubble displaying doginal dogs."` | Photo for AI Shark Tank product critics analysis article. |
 | `article12.jpg` | 1024 × 409 px | Article: The Dogs Wrote The Playbook | `"Pixel art banner featuring Vee on a lavender background with speech bubble displaying doginal dogs."` | Photo for Doginal Dogs architecture playbook article. |
 | `article13.jpg` | 1024 × 409 px | Article: The Price of Entry Isn't Money | `"Pixel art banner featuring Vee on a pink background with speech bubble saying Do only good everyday."` | Photo for collector conviction and legacy market thesis article. |
+| `article14.jpg` | 1024 × 409 px | Article: How NFTs Will Save The World | `"Pixel art banner featuring Vee on a green background with speech bubble saying Do only good everyday."` | Photo for cryptographic provenance and AI authentication article. |
 
 ---
 
