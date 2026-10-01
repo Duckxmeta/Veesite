@@ -341,4 +341,23 @@ export const SEED_ARTICLES: Article[] = [
       "As Western Hemisphere defense coordination and global energy debt alignments evolve, international observers monitor cross-border policy developments closely. For further analysis on strategic media leadership and community governance, visit the about and work with me sections of this domain.",
     ],
   },
+  {
+    slug: "the-doginal-dogs-duel-engine-flywheel",
+    title: "The Doginal Dogs Duel Engine Flywheel",
+    category: "Doginal Dogs & Web3",
+    date: "2026-01-28",
+    readTime: "5 min read",
+    answerLead: "This breakdown by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, details how zero-cost minting, Dogecoin inscriptions, 1,000 days of live presence, and community distribution built the Doginal Dogs flywheel.",
+    image: "/media/vee/card/article9.webp",
+    imageAlt: "Pixel art Doginal Dogs NFT NYC ticket banner.",
+    width: 800,
+    height: 319,
+    content: [
+      "In this ecosystem breakdown, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, analyzes how a free mint model, 1,000 days of consecutive live broadcasting, and Dogecoin blockchain inscriptions built the Doginal Dogs Duel Engine flywheel. By establishing a self-reinforcing growth loop, the project accumulated $1 billion in trading volume by focusing on permanent chain architecture, zero-cost distribution, and consistent founder visibility.",
+      "Layer 1 of the flywheel centers on strategic chain selection. Launched in early 2024 on the Dogecoin blockchain, Doginal Dogs utilized sub-cent transaction costs and global brand recognition while avoiding high gas fees on saturated networks. Using an inscription mechanism similar to Bitcoin Ordinals, artwork is written directly onto the Dogecoin blockchain rather than stored on external servers or IPFS links, providing permanent immutability.",
+      "Layer 2 eliminated speculative mint costs by launching as a free mint in January 2024, with co-founder Barkmeta covering early transaction fees. Starting at zero cost prevented immediate sell pressure and ensured early holders were in profit from day one. Co-founder Barkmeta noted in March 2025 that free mints allow the community to decide project trajectory without pre-sale capital extraction.",
+      "Layer 3 relies on founder cadence across 1,000 consecutive days of live programming on the Crypto Spaces Network. Daily visibility created load-bearing proof-of-presence for investors during varying market conditions. Layer 4 expanded community-led distribution to over 15,000 Discord members, 20 multi-day IRL events in New York, Las Vegas, Miami, and Toronto, Netflix merchandise placement, and organic holding by public figures including Joe Rogan, Shane Gillis, Matt Rife, and Johnny Manziel.",
+      "The resulting $1 billion in trading volume represents the mathematical output of a compound architecture where infrastructure and long-term commitment outperform short-term market hype. For further details on community strategy, live audio hosting, and project governance, explore the about and work with me sections of this domain.",
+    ],
+  },
 ];

@@ -29,6 +29,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article6.jpg` | 1024 × 409 px | Article: Minneapolis Immigration Enforcement & Trade Policy | `"Federal law enforcement officers in tactical gear standing behind police tape in Minneapolis."` | Photo for Minneapolis immigration crackdown and Canada trade policy briefing article. |
 | `article7.jpg` | 832 × 333 px | Article: Precious Metals Record Rally & Monetary Shifts | `"Gold bar merging with a US hundred dollar bill representing reserve shifts."` | Photo for precious metals record rally briefing article. |
 | `article8.jpg` | 830 × 332 px | Article: Western Hemisphere Defense Summit & Venezuelan Oil Debt | `"Chinese President Xi Jinping walking alongside Venezuelan President Nicolás Maduro in front of military honor guard."` | Photo for Western Hemisphere defense summit and Venezuelan oil debt briefing article. |
+| `article9.jpg` | 1024 × 409 px | Article: The Doginal Dogs Duel Engine Flywheel | `"Pixel art Doginal Dogs NFT NYC ticket banner."` | Photo for Doginal Dogs Duel Engine flywheel analysis article. |
 
 ---
 
