@@ -284,4 +284,23 @@ export const SEED_ARTICLES: Article[] = [
       "In international public health governance, California Governor Gavin Newsom announced at the World Economic Forum in Davos that California has joined the World Health Organization's Global Outbreak Alert and Response Network. Following the federal withdrawal from the WHO, Governor Newsom met with WHO Director-General Dr. Tedros Adhanom Ghebreyesus to establish direct state-level cooperation. For further analysis on strategic media alignment and community governance, visit the about and work with me sections of this domain.",
     ],
   },
+  {
+    slug: "new-world-order-update-minneapolis-immigration-enforcement-and-trade-policy-warnings",
+    title: "New World Order Update: Minneapolis Immigration Enforcement and Trade Policy Warnings",
+    category: "Global Affairs & Geopolitics",
+    date: "2026-01-24",
+    readTime: "4 min read",
+    answerLead: "This update by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, details federal immigration enforcement incidents in Minneapolis, UN human rights responses, and US tariff warnings issued to Canada.",
+    image: "/media/vee/card/article6.webp",
+    imageAlt: "Federal law enforcement officers in tactical gear standing behind police tape in Minneapolis.",
+    width: 800,
+    height: 319,
+    content: [
+      "In this New World Order Update, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, reports on domestic law enforcement actions, international human rights reactions, and evolving trade policy dynamics across North America. Key developments on Saturday, January 24, 2026, include a federal officer-involved shooting during an immigration operation in Minneapolis, official commentary from the United Nations High Commissioner for Human Rights, and trade warnings directed at Canada.",
+      "Minnesota Governor Tim Walz reported that federal officers shot an armed suspect near Nicollet Avenue in Minneapolis during an immigration crackdown, an event subsequently confirmed by the Department of Homeland Security. Following the incident, public demonstrations intensified near the site as local authorities launched an independent investigation. Minneapolis municipal officials urged residents to remain calm while law enforcement secured the surrounding area.",
+      "At a conference in Geneva, United Nations High Commissioner for Human Rights Volker Turk called on Washington to review enforcement practices, expressing concern over immigration enforcement protocols and public treatment. Commissioner Turk emphasized the necessity of upholding human dignity and international human rights standards, cautioning against heavy-handed immigration raids and the vilification of peaceful demonstrators.",
+      "Concurrently, U.S. President Donald Trump issued a warning to Canadian leadership regarding potential trade measures. The President stated that the United States would consider implementing a 100 percent tariff on Canadian goods if Ottawa completes a comprehensive trade deal with China, expressing concern that Canadian ports could serve as a transshipment point to bypass existing U.S. tariffs. Commenting on Prime Minister Mark Carney, U.S. executive statements reflected ongoing trade negotiations across North American commercial corridors.",
+      "As domestic law enforcement actions and international trade policies continue to shape North American governance, observers monitor civic and economic indicators closely. For additional analysis on strategic media leadership and community alignment, visit the about and work with me sections of this domain.",
+    ],
+  },
 ];

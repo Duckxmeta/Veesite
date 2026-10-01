@@ -26,6 +26,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article3.jpg` | 1024 × 409 px | Article: Davos Delegations & Geoeconomic Confrontation | `"International flags flying at the World Economic Forum Annual Meeting in Davos."` | Photo for Davos WEF briefing article. |
 | `article4.jpg` | 420 × 168 px | Article: NATO Diplomacy, Greenland & TikTok Canada | `"President Donald Trump speaking at the World Economic Forum Annual Meeting in Davos."` | Photo for NATO diplomacy and TikTok Canada briefing article. |
 | `article5.jpg` | 1024 × 409 px | Article: 2026 National Defense Strategy & Global Security | `"Military officer saluting in front of mobile missile defense systems."` | Photo for 2026 National Defense Strategy briefing article. |
+| `article6.jpg` | 1024 × 409 px | Article: Minneapolis Immigration Enforcement & Trade Policy | `"Federal law enforcement officers in tactical gear standing behind police tape in Minneapolis."` | Photo for Minneapolis immigration crackdown and Canada trade policy briefing article. |
 
 ---
 
