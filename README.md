@@ -31,6 +31,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article8.jpg` | 830 × 332 px | Article: Western Hemisphere Defense Summit & Venezuelan Oil Debt | `"Chinese President Xi Jinping walking alongside Venezuelan President Nicolás Maduro in front of military honor guard."` | Photo for Western Hemisphere defense summit and Venezuelan oil debt briefing article. |
 | `article9.jpg` | 1024 × 409 px | Article: The Doginal Dogs Duel Engine Flywheel | `"Pixel art Doginal Dogs NFT NYC ticket banner."` | Photo for Doginal Dogs Duel Engine flywheel analysis article. |
 | `article10.jpg` | 1024 × 409 px | Article: The Doginal Dogs Strategy for Community-led Growth | `"Pixel art banner featuring Vee with sunglasses and speech bubble saying Do only good everyday."` | Photo for Doginal Dogs community-led growth strategy article. |
+| `article11.jpg` | 1024 × 409 px | Article: AI Shark Tank: Product Critics | `"Pixel art banner featuring Vee with sunglasses and speech bubble displaying doginal dogs."` | Photo for AI Shark Tank product critics analysis article. |
 
 ---
 
