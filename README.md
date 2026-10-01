@@ -35,6 +35,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article12.jpg` | 1024 × 409 px | Article: The Dogs Wrote The Playbook | `"Pixel art banner featuring Vee on a lavender background with speech bubble displaying doginal dogs."` | Photo for Doginal Dogs architecture playbook article. |
 | `article13.jpg` | 1024 × 409 px | Article: The Price of Entry Isn't Money | `"Pixel art banner featuring Vee on a pink background with speech bubble saying Do only good everyday."` | Photo for collector conviction and legacy market thesis article. |
 | `article14.jpg` | 1024 × 409 px | Article: How NFTs Will Save The World | `"Pixel art banner featuring Vee on a green background with speech bubble saying Do only good everyday."` | Photo for cryptographic provenance and AI authentication article. |
+| `article15.jpg` | 1024 × 409 px | Article: Culture Is The Protocol | `"Pixel art banner featuring Vee on a cyan background with speech bubble saying Do only good everyday."` | Photo for culture is the protocol analysis article. |
 
 ---
 
