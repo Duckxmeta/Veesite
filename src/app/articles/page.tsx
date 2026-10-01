@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SEED_ARTICLES } from "@/data/siteConfig";
+import { getSortedArticles } from "@/data/siteConfig";
 
 export const metadata = {
   title: "Essays & Articles by Vee (@veemeta)",
@@ -12,6 +12,8 @@ export const metadata = {
 };
 
 export default function ArticlesIndexPage() {
+  const articles = getSortedArticles();
+
   return (
     <div className="container">
       <section style={{ padding: "20px 0 40px" }}>
@@ -24,9 +26,9 @@ export default function ArticlesIndexPage() {
       </section>
 
       <section style={{ margin: "20px 0 60px" }}>
-        {SEED_ARTICLES.length > 0 ? (
+        {articles.length > 0 ? (
           <div className="grid-2">
-            {SEED_ARTICLES.map((article) => (
+            {articles.map((article) => (
               <article key={article.slug} className="card">
                 <div>
                   <Link href={`/articles/${article.slug}`} style={{ display: "block", marginBottom: "16px" }}>

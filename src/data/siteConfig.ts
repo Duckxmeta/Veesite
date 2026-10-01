@@ -399,3 +399,14 @@ export const SEED_ARTICLES: Article[] = [
     ],
   },
 ];
+
+export function getSortedArticles(): Article[] {
+  return [...SEED_ARTICLES].sort((a, b) => {
+    const timeA = new Date(a.date).getTime();
+    const timeB = new Date(b.date).getTime();
+    if (timeB !== timeA) {
+      return timeB - timeA;
+    }
+    return 0;
+  });
+}

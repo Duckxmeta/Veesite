@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SITE_CONFIG, ENTITY_FAQS, SEED_ARTICLES, MEDIA_ASSETS } from "@/data/siteConfig";
+import { SITE_CONFIG, ENTITY_FAQS, getSortedArticles, MEDIA_ASSETS } from "@/data/siteConfig";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -57,7 +57,7 @@ export default function HomePage() {
     })),
   };
 
-  const latestArticles = SEED_ARTICLES.slice(0, 3);
+  const latestArticles = getSortedArticles().slice(0, 3);
 
   return (
     <>
