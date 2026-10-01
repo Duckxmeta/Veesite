@@ -21,6 +21,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `BowDAO.webp` | 1000 × 1000 px | `/about` ("In the room" strip) | `"Pixel art of a black Doginal Dog wearing a red bow on a light green background."` | `"BowDAO Doginal Dog mascot artwork."` |
 | `Veebanner.jpg` | 1500 × 500 px | Preserved in `public/media/vee/` | `"Vee Brand Pastel Banner Grid"` | Decorative color grid. |
 | `Veelogo.jpg` | 400 × 400 px | Header Brand Mark | `"Vee Brand Logo"` | Pixel art cat avatar. |
+| `article1.jpg` | 700 × 280 px | Article: New World Order Daily Briefing | `"Canadian diplomatic delegation arriving in Qatar."` | Diplomatic visit photo for Persian Gulf article. |
 
 ---
 

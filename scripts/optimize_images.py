@@ -23,6 +23,7 @@ IMAGE_FILES = [
     "BowDAO.webp",
     "Veebanner.jpg",
     "Veelogo.jpg",
+    "article1.jpg",
 ]
 
 def process_image(filename):
