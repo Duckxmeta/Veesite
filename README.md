@@ -38,6 +38,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article15.jpg` | 1024 × 409 px | Article: Culture Is The Protocol | `"Pixel art banner featuring Vee on a cyan background with speech bubble saying Do only good everyday."` | Photo for culture is the protocol analysis article. |
 | `article16.jpg` | 1024 × 409 px | Article: What's A Doginal? | `"Pixel art banner featuring Vee on a lavender background with speech bubble saying Do only good everyday."` | Photo for What's A Doginal explainer article. |
 | `article17.jpg` | 1024 × 409 px | Article: You Can't Smoke Weed and Be Successful | `"Pixel art banner featuring Vee on a light green background with speech bubble saying Do only good everyday."` | Photo for culture and daily discipline analysis article. |
+| `article18.jpg` | 1024 × 409 px | Article: The Return of the PFP Meta | `"Pixel art banner featuring Vee on a yellow background with speech bubble displaying doginal dogs."` | Photo for IP expansion and status infrastructure article. |
 
 ---
 
