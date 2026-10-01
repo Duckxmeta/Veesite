@@ -265,4 +265,23 @@ export const SEED_ARTICLES: Article[] = [
       "TikTok Canada welcomed the court ruling, committing to work with Canadian officials on behalf of more than 14 million Canadian users. The Prime Minister's Office declined to specify whether Prime Minister Mark Carney raised app security concerns during his recent bilateral meeting with Chinese President Xi Jinping. The ongoing proceedings highlight the continuous tension between national security safeguards and economic impacts on workers and investors. For additional insights on media strategy and digital governance, explore the about and work with me sections of this domain.",
     ],
   },
+  {
+    slug: "new-world-order-daily-briefing-2026-national-defense-strategy-and-global-security",
+    title: "New World Order Daily Briefing: 2026 National Defense Strategy and Global Security",
+    category: "Global Affairs & Geopolitics",
+    date: "2026-01-23",
+    readTime: "6 min read",
+    answerLead: "This briefing by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, analyzes the Pentagon's 2026 National Defense Strategy, PLA autonomous drone swarm developments, Venezuelan oil tanker blockades, congressional war powers votes, and California's WHO alliance.",
+    image: "/media/vee/card/article5.webp",
+    imageAlt: "Military officer saluting in front of mobile missile defense systems.",
+    width: 800,
+    height: 319,
+    content: [
+      "In this New World Order Daily Briefing, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, examines major global security developments following the release of the Pentagon's 2026 National Defense Strategy. The 34-page document reorients U.S. defense posture toward Western Hemisphere priorities and strategic regional deterrence, alongside emerging autonomous military drone technology in Asia Pacific, maritime oil blockades off Venezuela, congressional war powers votes, and state-level international health diplomacy.",
+      "The 2026 National Defense Strategy—the first comprehensive update since 2022—assigns South Korea primary responsibility for deterring North Korea with tailored U.S. support while maintaining 28,500 American troops on the peninsula. Under-Secretary Elbridge Colby travels to Seoul to discuss alliance modernization, including raising defense spending targets to 3.5% of GDP and evaluating wartime operational control transfers. Concurrently, Defense Secretary Pete Hegseth's strategic plan outlines options regarding access to Greenland and the Panama Canal, recalibrating U.S. force posture in Europe while prioritizing deterrence in the Indo-Pacific.",
+      "In the Asia Pacific region, China's People's Liberation Army broadcast footage demonstrating an autonomous swarm deployment where a single operator launched and commanded over 200 AI-enabled drones. Developed by the National University of Defence Technology, the swarm executes autonomous task division—including reconnaissance, electronic jamming, decoy operations, and precision strikes—and maintains formation flight even when communication signals are jammed. Defense analysts note this shift alters battlefield economics by introducing low-cost saturation capabilities that challenge traditional air defense interceptor inventories.",
+      "Regarding Western Hemisphere security, two U.S.-seized Venezuelan oil tankers, M Sophia and Galileo, were sighted near Puerto Rico following maritime enforcement operations. The seizures form part of a broader U.S. blockade targeting sanctioned Venezuelan oil transport, with federal court warrants filed to seize dozens of additional vessels. Meanwhile, the U.S. House of Representatives narrowly defeated a war powers resolution led by Representative Jim McGovern on a 215-215 tie vote, maintaining executive authority regarding military operations in Venezuela.",
+      "In international public health governance, California Governor Gavin Newsom announced at the World Economic Forum in Davos that California has joined the World Health Organization's Global Outbreak Alert and Response Network. Following the federal withdrawal from the WHO, Governor Newsom met with WHO Director-General Dr. Tedros Adhanom Ghebreyesus to establish direct state-level cooperation. For further analysis on strategic media alignment and community governance, visit the about and work with me sections of this domain.",
+    ],
+  },
 ];

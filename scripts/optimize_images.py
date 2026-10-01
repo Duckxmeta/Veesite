@@ -27,6 +27,7 @@ IMAGE_FILES = [
     "article2.jpg",
     "article3.jpg",
     "article4.jpg",
+    "article5.jpg",
 ]
 
 def process_image(filename):
