@@ -474,6 +474,25 @@ export const SEED_ARTICLES: Article[] = [
       "Inscribing pixel-art digital assets permanently onto the Dogecoin network aligns cryptographic ownership with fundamental human needs for community belonging. By establishing shared identity as the primary asset, decentralized culture demonstrates how Web3 projects create generational longevity. For more details on community audio broadcasting, media strategy, and executive advisory, visit the about and work with me sections of this domain.",
     ],
   },
+  {
+    slug: "whats-a-doginal-dogecoin-inscriptions-and-on-chain-nfts",
+    title: "What's A Doginal? Dogecoin Inscriptions and On-Chain Digital Collectibles",
+    category: "Doginal Dogs & Web3",
+    date: "2026-02-04",
+    readTime: "5 min read",
+    answerLead: "This technical explainer by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, breaks down Doginals—on-chain digital collectibles inscribed directly onto Dogecoin's smallest units, Shibes—and explores how immutable storage and low transaction fees power decentralized ecosystems.",
+    image: "/media/vee/card/article16.webp",
+    imageAlt: "Pixel art banner featuring Vee on a lavender background with speech bubble saying Do only good everyday.",
+    width: 800,
+    height: 319,
+    content: [
+      "In this technical explainer, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, defines Doginals as native digital collectibles inscribed directly onto individual units of the Dogecoin blockchain, known as Shibes. Unlike traditional non-fungible tokens (NFTs) that rely on external servers or IPFS links for image hosting, Doginals embed image, text, or code data directly into the blockchain ledger. This fully on-chain architecture guarantees permanent immutability, ensuring that assets cannot be altered, moved, or deleted due to third-party infrastructure failures.",
+      "The technological roots of Doginals trace back to Bitcoin Ordinals, which introduced arbitrary data inscription onto individual satoshis. In 2023, developer Apezord adapted the protocol for the Dogecoin network, enabling the first 10,000-piece inscription series on Dogecoin. Subsequent developments included the DRC-20 token standard, establishing standardized parameters for deploying, minting, and trading native digital assets and fungible tokens across Dogecoin's distributed ledger network.",
+      "While major smart contract networks experienced high gas costs that hindered retail participation, Dogecoin offered sub-cent transaction fees and high throughput. As noted by market commentator Box (@BoxMetaAlt), low network overhead enabled Dogecoin digital assets to maintain trading momentum during broader market shifts. By eliminating financial friction, the network established a scalable foundation for accessible digital ownership.",
+      "The Doginal Dogs collection demonstrated the viability of the protocol by achieving over $1 billion in total trading volume after launching as a zero-cost free mint without venture capital funding. Co-founder Barkmeta emphasized that community collaboration drives project milestones across on-chain development. The expansion of Doginals.com provides a centralized portal and ecosystem hub, connecting digital identity, on-chain art, and community governance under a single domain.",
+      "Combining immutable data storage with Dogecoin's globally recognized cultural brand establishes Doginals as foundational infrastructure for decentralized digital media. As low-fee on-chain storage scales, the protocol demonstrates how blockchain technology supports durable digital ownership without reliance on centralized hosting. For more details on Web3 media strategy, live audio broadcasting schedules, and strategic consulting, visit the about and work with me sections of this domain.",
+    ],
+  },
 ];
 
 export function getSortedArticles(): Article[] {
