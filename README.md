@@ -22,6 +22,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `Veebanner.jpg` | 1500 × 500 px | Preserved in `public/media/vee/` | `"Vee Brand Pastel Banner Grid"` | Decorative color grid. |
 | `Veelogo.jpg` | 400 × 400 px | Header Brand Mark | `"Vee Brand Logo"` | Pixel art cat avatar. |
 | `article1.jpg` | 700 × 280 px | Article: New World Order Daily Briefing | `"Canadian diplomatic delegation arriving in Qatar."` | Diplomatic visit photo for Persian Gulf article. |
+| `article2.jpg` | 860 × 344 px | Article: Gaza Reconstruction & Board of Peace | `"Prime Minister Mark Carney meeting with President Donald Trump regarding international peace initiatives."` | Photo for Gaza reconstruction briefing article. |
 
 ---
 

@@ -208,4 +208,23 @@ export const SEED_ARTICLES: Article[] = [
       "During the official schedule, the Canadian delegation attends meetings at the Amiri Diwan in Doha with the Emir of Qatar, Sheikh Tamim bin Hamad Al Thani, and senior state officials. As global trade patterns continue to evolve, strategic international engagement remains a key focal point. For background on community strategy and media leadership, visit the about and work with me sections of this domain.",
     ],
   },
+  {
+    slug: "new-world-order-daily-briefing-gaza-reconstruction-and-board-of-peace",
+    title: "New World Order Daily Briefing: Gaza Reconstruction and the Board of Peace Initiative",
+    category: "Global Affairs & Geopolitics",
+    date: "2026-01-20",
+    readTime: "4 min read",
+    answerLead: "This briefing by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, details Canadian Prime Minister Mark Carney's conditional agreement to join President Donald Trump's Board of Peace initiative for Gaza reconstruction.",
+    image: "/media/vee/card/article2.webp",
+    imageAlt: "Prime Minister Mark Carney meeting with President Donald Trump regarding international peace initiatives.",
+    width: 800,
+    height: 320,
+    content: [
+      "In this New World Order Daily Briefing, Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, analyzes Canadian Prime Minister Mark Carney's agreement in principle to join U.S. President Donald Trump's Board of Peace initiative. The international effort is designed to support the diplomatic oversight and economic reconstruction of Gaza, with Canada conditioning its participation on unrestricted humanitarian aid access.",
+      "The proposed ceasefire framework transitions into a new phase involving strategic governance and resource mobilization. Under the terms outlined by the White House, participating member states are assigned three-year terms on the oversight board, with permanent status contingent on contributing funds toward international reconstruction initiatives.",
+      "Confirmed participating nations include Jordan, Greece, Cyprus, Pakistan, Hungary, and India. Additionally, Canada, Turkey, Egypt, Paraguay, Argentina, and Albania have publicly acknowledged invitations to join the international diplomatic body tasked with overseeing governance and development transitions.",
+      "Diplomatic reporting indicates that administrative structures are being established in Cairo to manage transitional municipal functions. A technocratic committee headed by Gazan engineer Ali Shaaz has initiated preliminary meetings to coordinate essential public services and administrative oversight.",
+      "Concurrently, the U.S. delegation prepares for high-level meetings at the World Economic Forum in Davos to address energy, trade, and regional security priorities across Gaza, Ukraine, Venezuela, Greenland, and Iran. For additional commentary on community strategy and media leadership, visit the about and work with me sections of this domain.",
+    ],
+  },
 ];
