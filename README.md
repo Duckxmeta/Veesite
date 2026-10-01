@@ -32,6 +32,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article9.jpg` | 1024 × 409 px | Article: The Doginal Dogs Duel Engine Flywheel | `"Pixel art Doginal Dogs NFT NYC ticket banner."` | Photo for Doginal Dogs Duel Engine flywheel analysis article. |
 | `article10.jpg` | 1024 × 409 px | Article: The Doginal Dogs Strategy for Community-led Growth | `"Pixel art banner featuring Vee with sunglasses and speech bubble saying Do only good everyday."` | Photo for Doginal Dogs community-led growth strategy article. |
 | `article11.jpg` | 1024 × 409 px | Article: AI Shark Tank: Product Critics | `"Pixel art banner featuring Vee with sunglasses and speech bubble displaying doginal dogs."` | Photo for AI Shark Tank product critics analysis article. |
+| `article12.jpg` | 1024 × 409 px | Article: The Dogs Wrote The Playbook | `"Pixel art banner featuring Vee on a lavender background with speech bubble displaying doginal dogs."` | Photo for Doginal Dogs architecture playbook article. |
 
 ---
 
