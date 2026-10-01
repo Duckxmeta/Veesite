@@ -25,6 +25,7 @@ IMAGE_FILES = [
     "Veelogo.jpg",
     "article1.jpg",
     "article2.jpg",
+    "article3.jpg",
 ]
 
 def process_image(filename):
