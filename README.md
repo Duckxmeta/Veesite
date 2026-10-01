@@ -24,6 +24,7 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 | `article1.jpg` | 700 × 280 px | Article: New World Order Daily Briefing | `"Canadian diplomatic delegation arriving in Qatar."` | Diplomatic visit photo for Persian Gulf article. |
 | `article2.jpg` | 860 × 344 px | Article: Gaza Reconstruction & Board of Peace | `"Prime Minister Mark Carney meeting with President Donald Trump regarding international peace initiatives."` | Photo for Gaza reconstruction briefing article. |
 | `article3.jpg` | 1024 × 409 px | Article: Davos Delegations & Geoeconomic Confrontation | `"International flags flying at the World Economic Forum Annual Meeting in Davos."` | Photo for Davos WEF briefing article. |
+| `article4.jpg` | 420 × 168 px | Article: NATO Diplomacy, Greenland & TikTok Canada | `"President Donald Trump speaking at the World Economic Forum Annual Meeting in Davos."` | Photo for NATO diplomacy and TikTok Canada briefing article. |
 
 ---
 
