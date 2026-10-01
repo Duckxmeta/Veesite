@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SITE_CONFIG, HOME_FAQS, SEED_ARTICLES, MEDIA_ASSETS } from "@/data/siteConfig";
+import { SITE_CONFIG, ENTITY_FAQS, SEED_ARTICLES, MEDIA_ASSETS } from "@/data/siteConfig";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -47,7 +47,7 @@ export default function HomePage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: HOME_FAQS.map((faq) => ({
+    mainEntity: ENTITY_FAQS.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -223,43 +223,52 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid-3">
-            {latestArticles.map((article) => (
-              <article key={article.slug} className="card">
-                <div>
-                  <div className="card-header">
-                    <span className="badge">{article.category}</span>
-                    <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                      {article.readTime}
-                    </span>
+          {latestArticles.length > 0 ? (
+            <div className="grid-3">
+              {latestArticles.map((article) => (
+                <article key={article.slug} className="card">
+                  <div>
+                    <div className="card-header">
+                      <span className="badge">{article.category}</span>
+                      <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                        {article.readTime}
+                      </span>
+                    </div>
+                    <h3 style={{ fontSize: "1.15rem", margin: "12px 0 8px" }}>
+                      <Link
+                        href={`/articles/${article.slug}`}
+                        style={{ color: "var(--text-primary)", textDecoration: "none" }}
+                      >
+                        {article.title}
+                      </Link>
+                    </h3>
+                    <p style={{ fontSize: "0.95rem" }}>{article.answerLead}</p>
                   </div>
-                  <h3 style={{ fontSize: "1.15rem", margin: "12px 0 8px" }}>
-                    <Link
-                      href={`/articles/${article.slug}`}
-                      style={{ color: "var(--text-primary)", textDecoration: "none" }}
-                    >
-                      {article.title}
-                    </Link>
-                  </h3>
-                  <p style={{ fontSize: "0.95rem" }}>{article.answerLead}</p>
-                </div>
-                <Link
-                  href={`/articles/${article.slug}`}
-                  className="descriptive-link"
-                  style={{ marginTop: "16px", fontSize: "0.9rem" }}
-                >
-                  Read essay: {article.title} {"→"}
-                </Link>
-              </article>
-            ))}
-          </div>
+                  <Link
+                    href={`/articles/${article.slug}`}
+                    className="descriptive-link"
+                    style={{ marginTop: "16px", fontSize: "0.9rem" }}
+                  >
+                    Read essay: {article.title} {"→"}
+                  </Link>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p style={{ color: "var(--text-muted)", fontStyle: "italic", marginTop: "16px" }}>
+              Essays are added as they are published.
+            </p>
+          )}
         </section>
 
         {/* FAQ Section */}
         <section className="faq-section">
           <h2>Frequently Asked Questions</h2>
+          <p style={{ color: "var(--text-secondary)", marginTop: "-8px", marginBottom: "24px" }}>
+            Direct verification footprints and project background definitions.
+          </p>
           <div>
-            {HOME_FAQS.map((faq, idx) => (
+            {ENTITY_FAQS.map((faq, idx) => (
               <div key={idx} className="faq-item">
                 <p className="faq-question">{faq.question}</p>
                 <p className="faq-answer">{faq.answer}</p>

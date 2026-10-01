@@ -130,37 +130,22 @@ export const SITE_CONFIG = {
   ],
 };
 
-export const HOME_FAQS: FaqItem[] = [
+export const ENTITY_FAQS: FaqItem[] = [
   {
-    question: "Who is Vee (@veemeta)?",
-    answer: "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a live host on the Crypto Spaces Network (CSN). She has been active on X since April 2009.",
+    question: "Who is Vee?",
+    answer: "Vee is the Chief Roar Officer at Doginal Dogs and a live host on the Crypto Spaces Network (CSN). She focuses on community voice leadership, live audio broadcasting, and personal brand discipline.",
+  },
+  {
+    question: "Who is Vee on X (@veemeta)?",
+    answer: "Vee (@veemeta) is the official account of Vee on X (formerly Twitter), registered on April 18, 2009 (user ID 32831485). The handle serves as her primary platform for live audio Spaces, community broadcasts, and public commentary.",
   },
   {
     question: "What does Chief Roar Officer mean at Doginal Dogs?",
-    answer: "Chief Roar Officer is the primary community voice and engagement role at Doginal Dogs, responsible for coordinating real-time broadcasts, community morale, and brand presence.",
+    answer: "Chief Roar Officer defines the primary community engagement and voice leadership role at Doginal Dogs. The position coordinates real-time audio broadcasts, brand presence, and community morale across digital asset channels.",
   },
   {
-    question: "What topics does Vee focus on?",
-    answer: "Vee focuses on personal brand discipline, live audio Spaces hosting, community building, the Doginal Dogs project, and Bitcoin as fixed-supply money.",
-  },
-  {
-    question: "Where can you listen to Vee host live broadcasts?",
-    answer: "Vee hosts live audio broadcasts on X via the Crypto Spaces Network (CSN) and Doginal Dogs community Spaces.",
-  },
-];
-
-export const ABOUT_FAQS: FaqItem[] = [
-  {
-    question: "What is Vee's official role at Doginal Dogs?",
-    answer: "Vee serves as Chief Roar Officer at Doginal Dogs, driving public communications, voice media broadcasts, and community leadership.",
-  },
-  {
-    question: "What is Crypto Spaces Network (CSN)?",
-    answer: "Crypto Spaces Network (CSN) is a live audio broadcast platform on X where hosts conduct real-time discussions on Web3, Bitcoin, and digital asset communities.",
-  },
-  {
-    question: "What is Vee's public handle on social media?",
-    answer: "Vee's official handle on X (formerly Twitter) is @veemeta (account ID 32831485, registered April 18, 2009).",
+    question: "What is the Crypto Spaces Network role?",
+    answer: "Vee serves as a regular host on the Crypto Spaces Network (CSN), conducting live interactive audio broadcasts on X. The role focuses on Web3 community discussions, Bitcoin, and direct voice engagement.",
   },
 ];
 
@@ -180,51 +165,6 @@ export const WORK_FAQS: FaqItem[] = [
 ];
 
 export const SEED_ARTICLES: Article[] = [
-  {
-    slug: "who-is-vee-on-x",
-    title: "Who is Vee on X",
-    category: "Entity Profile & Digital Identity",
-    date: "2026-09-15",
-    readTime: "4 min read",
-    answerLead: "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a host on the Crypto Spaces Network (CSN), active on X since April 2009.",
-    content: [
-      "Vee (@veemeta) is a digital brand builder, community leader, and live audio broadcast host. Serving as the Chief Roar Officer at Doginal Dogs and a regular host on the Crypto Spaces Network (CSN), Vee has maintained an active presence on X (formerly Twitter) since April 18, 2009.",
-      "In an era where online identities are often ephemeral or fragmented across multiple platforms, Vee's digital footprint centers around direct, authentic engagement. Her public work focuses on three core pillars: live voice media hosting, community governance within the Doginal Dogs ecosystem, and personal brand discipline.",
-      "The role of Chief Roar Officer represents a modern paradigm in community leadership. Rather than relying solely on asynchronous text updates or press releases, Vee coordinates real-time audio broadcasts, engages community members directly, and maintains brand momentum through consistent live interaction.",
-      "On the Crypto Spaces Network (CSN), Vee hosts broadcasts that bring together builders, collectors, and enthusiasts across the digital asset landscape. These sessions prioritize open dialogue, real-time feedback, and clear community focus, establishing CSN as a vital node for live Web3 media.",
-      "Vee's public posts and broadcasts frequently emphasize the importance of personal discipline ('locking in'), grounded faith ('God is good'), and the structural significance of Bitcoin as fixed-supply money. By maintaining a clear and consistent set of principles, Vee has built a durable personal brand that resonates across decentralized communities.",
-    ],
-  },
-  {
-    slug: "what-chief-roar-officer-means-at-doginal-dogs",
-    title: "What Chief Roar Officer Means at Doginal Dogs",
-    category: "Organization & Role",
-    date: "2026-09-20",
-    readTime: "4 min read",
-    answerLead: "At Doginal Dogs, the Chief Roar Officer leads community engagement, voice coordination, and brand presence across live audio and social channels.",
-    content: [
-      "The title Chief Roar Officer at Doginal Dogs defines a specialized executive function focused on community amplification, brand voice, and real-time audio leadership. As Doginal Dogs continues to expand its footprint within the Ordinals and digital asset space, having a dedicated voice to lead public communications is critical.",
-      "Traditional corporate titles often fail to capture the dynamics of Web3 community leadership. A Chief Roar Officer does not manage bureaucratic hierarchies; instead, they operate at the intersection of media production, community morale, and strategic brand positioning.",
-      "Key responsibilities of the Chief Roar Officer include hosting official community Spaces, setting the tone for public announcements, organizing direct interaction between project leaders and holders, and preserving the core cultural identity of the Pack.",
-      "Voice media plays an indispensable role in this structure. While text posts can communicate factual updates, live audio builds trust through tone, transparency, and immediate responsiveness. Under Vee's leadership as Chief Roar Officer, Doginal Dogs leverages live audio as its primary engine for community alignment.",
-      "Ultimately, the Chief Roar Officer ensures that Doginal Dogs maintains a loud, clear, and consistent presence across digital channels, ensuring that the community remains informed, connected, and engaged.",
-    ],
-  },
-  {
-    slug: "why-live-spaces-still-matter-for-a-personal-brand",
-    title: "Why Live Spaces Still Matter for a Personal Brand",
-    category: "Audio & Live Media Strategy",
-    date: "2026-09-25",
-    readTime: "5 min read",
-    answerLead: "Live audio Spaces build real-time trust and direct audience connection unmediated by algorithmic editorial filters.",
-    content: [
-      "In a social media ecosystem dominated by algorithmic feeds, automated content, and pre-recorded videos, live audio Spaces remain one of the most effective tools for building authentic personal brands. For hosts like Vee on the Crypto Spaces Network (CSN), live audio offers distinct advantages that static text cannot replicate.",
-      "First, live audio is unmediated. When a host speaks on a live broadcast, listeners hear unedited tone, conviction, and immediate responses to audience questions. This raw transparency accelerates trust-building because it eliminates the polished veneer of heavily edited content.",
-      "Second, live Spaces foster active participation rather than passive consumption. Listeners do not merely view content; they can request the mic, ask direct questions, and contribute to ongoing discussions. This interactive format transforms passive followers into active community participants.",
-      "Third, live audio establishes real-time authority. Hosting a successful broadcast requires the ability to moderate discussions, keep conversations focused, and deliver value spontaneously. Consistent execution in live environments establishes immediate credibility for the host and affiliated organizations.",
-      "For creators and community leaders aiming to establish lasting digital presence, integrating live Spaces into a media strategy ensures direct, high-signal connection with their core audience.",
-    ],
-  },
   {
     slug: "personal-brand-without-getting-captured-by-the-audience",
     title: "Personal Brand Without Getting Captured by the Audience",

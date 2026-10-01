@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SITE_CONFIG, ABOUT_FAQS, MEDIA_ASSETS } from "@/data/siteConfig";
+import { SITE_CONFIG, ENTITY_FAQS, MEDIA_ASSETS } from "@/data/siteConfig";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
@@ -46,7 +46,7 @@ export default function AboutPage() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: ABOUT_FAQS.map((faq) => ({
+    mainEntity: ENTITY_FAQS.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -245,9 +245,12 @@ export default function AboutPage() {
 
         {/* FAQ Section */}
         <section className="faq-section">
-          <h2>About FAQ</h2>
+          <h2>Frequently Asked Questions</h2>
+          <p style={{ color: "var(--text-secondary)", marginTop: "-8px", marginBottom: "24px" }}>
+            Direct verification footprints and project background definitions.
+          </p>
           <div>
-            {ABOUT_FAQS.map((faq, idx) => (
+            {ENTITY_FAQS.map((faq, idx) => (
               <div key={idx} className="faq-item">
                 <p className="faq-question">{faq.question}</p>
                 <p className="faq-answer">{faq.answer}</p>
