@@ -14,17 +14,32 @@ export default function Header({ currentPath }: HeaderProps) {
       </a>
       <header className="site-header" role="banner">
         <div className="container nav-wrapper">
-          <Link href="/" className="brand-link" aria-label="Vee Homepage">
-            <Image
-              src="/Veelogo.jpg"
-              alt="Vee Brand Logo"
-              width={36}
-              height={36}
-              className="brand-logo"
-              priority
-            />
-            <span>{SITE_CONFIG.displayName}</span>
-          </Link>
+          <div className="brand-group" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <a
+              href={SITE_CONFIG.xUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Vee on X (@veemeta)"
+              className="x-pfp-link"
+            >
+              <div className="x-spaces-ring">
+                <div className="x-spaces-gap">
+                  <Image
+                    src="/Veelogo.jpg"
+                    alt="Vee Brand Logo"
+                    width={36}
+                    height={36}
+                    className="brand-logo"
+                    priority
+                  />
+                </div>
+              </div>
+            </a>
+            <Link href="/" className="brand-name-link" aria-label="Vee Homepage">
+              <span>{SITE_CONFIG.displayName}</span>
+            </Link>
+          </div>
+
           <nav aria-label="Main Navigation">
             <ul className="nav-links">
               <li>
@@ -62,6 +77,16 @@ export default function Header({ currentPath }: HeaderProps) {
                 >
                   Work with Vee
                 </Link>
+              </li>
+              <li>
+                <a
+                  href={SITE_CONFIG.xUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link"
+                >
+                  X @veemeta
+                </a>
               </li>
             </ul>
           </nav>

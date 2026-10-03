@@ -1,27 +1,49 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_CONFIG } from "@/data/siteConfig";
 
 export default function Footer() {
   return (
     <footer className="site-footer" role="contentinfo">
       <div className="container footer-content">
-        <div>
-          <p style={{ margin: 0, fontWeight: 600, color: "var(--text-primary)" }}>
-            {SITE_CONFIG.displayName} ({SITE_CONFIG.handle})
-          </p>
-          <p style={{ margin: 0, fontSize: "0.85rem" }}>
-            Chief Roar Officer at{" "}
-            <a
-              href={SITE_CONFIG.doginalDogsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="descriptive-link"
-            >
-              Doginal Dogs
-            </a>
-            . Domain:{" "}
-            <span className="placeholder-box">{SITE_CONFIG.domainPlaceholder}</span>
-          </p>
+        <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+          <a
+            href={SITE_CONFIG.xUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Vee on X (@veemeta)"
+            className="x-pfp-link"
+          >
+            <div className="x-spaces-ring">
+              <div className="x-spaces-gap">
+                <Image
+                  src="/Veelogo.jpg"
+                  alt="Vee Brand Logo"
+                  width={36}
+                  height={36}
+                  className="brand-logo"
+                />
+              </div>
+            </div>
+          </a>
+          <div>
+            <p style={{ margin: 0, fontWeight: 600, color: "var(--text-primary)" }}>
+              {SITE_CONFIG.displayName} ({SITE_CONFIG.handle})
+            </p>
+            <p style={{ margin: 0, fontSize: "0.85rem" }}>
+              Chief Roar Officer at{" "}
+              <a
+                href={SITE_CONFIG.doginalDogsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="descriptive-link"
+              >
+                Doginal Dogs
+              </a>
+              . Domain:{" "}
+              <span className="placeholder-box">{SITE_CONFIG.domainPlaceholder}</span>
+            </p>
+          </div>
         </div>
         <ul className="footer-links">
           <li>

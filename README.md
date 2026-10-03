@@ -50,7 +50,7 @@ Before deploying to production, search and replace the following placeholder tok
 | :--- | :--- | :--- | :--- |
 | `[CLIENT_DOMAIN]` | The target production domain (e.g., `veemeta.xyz`) | `siteConfig.ts`, `layout.tsx`, `sitemap.ts`, `robots.ts`, `llms.txt` | **Pending** |
 | `[LEGAL_NAME_IF_APPROVED]` | Legal name (optional; omit from schema until approved) | `siteConfig.ts` | **Pending** |
-| `[EMAIL_OR_BOOKING_URL]` | Contact email or Calendly booking link | `siteConfig.ts`, `/work-with-me` | **Pending** |
+| `[EMAIL_OR_BOOKING_URL]` | Contact email (`Veemetax@gmail.com`) | `siteConfig.ts`, `/work-with-me` | **Configured (`Veemetax@gmail.com`)** |
 | `[OFFER_1]` | Title for Offer 1 (e.g. Custom Collaboration) | `siteConfig.ts`, `/work-with-me` | **Pending** |
 | `[OFFER_2]` | Title for Offer 2 (e.g. Live Audio Hosting / Moderation) | `siteConfig.ts`, `/work-with-me` | **Pending** |
 | `[OFFER_3]` | Title for Offer 3 (e.g. Community Strategy Advisory) | `siteConfig.ts`, `/work-with-me` | **Pending** |

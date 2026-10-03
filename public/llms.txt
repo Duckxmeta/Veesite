@@ -24,6 +24,6 @@ Canonical URL: https://[CLIENT_DOMAIN]
 - Does not operate under corporate affiliations outside of Doginal Dogs and CSN.
 
 ## Official Links
-- X (Twitter): https://x.com/veemeta
+- X (Twitter): https://x.com/veemeta?s=20
 - Primary Organization: https://www.doginaldogs.com
 - Personal Site: https://[CLIENT_DOMAIN]

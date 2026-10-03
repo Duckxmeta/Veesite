@@ -100,22 +100,63 @@ textarea:focus-visible {
   justify-content: space-between;
 }
 
-.brand-link {
+.brand-group {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+/* X Spaces Live PFP Ring Logo Mark */
+.x-pfp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: var(--text-primary);
-  font-weight: 700;
-  font-size: 1.15rem;
+  border-radius: 50%;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.x-pfp-link:hover {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+.x-spaces-ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  background: linear-gradient(135deg, #7C4DFF 0%, #E040FB 100%);
+  border-radius: 50%;
+}
+
+.x-spaces-gap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  background-color: var(--bg-primary);
+  border-radius: 50%;
 }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-full);
+  border-radius: 50%;
+  display: block;
   object-fit: cover;
-  border: 1px solid var(--accent-gold);
+}
+
+.brand-name-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.brand-name-link:hover {
+  color: var(--accent-gold);
 }
 
 .nav-links {

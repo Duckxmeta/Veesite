@@ -134,7 +134,12 @@ export default function WorkWithMePage() {
                 <div style={{ margin: "20px 0" }}>
                   <p style={{ fontSize: "1.1rem", fontWeight: 600 }}>
                     Contact Target:{" "}
-                    <span className="placeholder-box">{SITE_CONFIG.contactPlaceholder}</span>
+                    <a
+                      href={`mailto:${SITE_CONFIG.contactEmail}`}
+                      className="descriptive-link"
+                    >
+                      {SITE_CONFIG.contactEmail}
+                    </a>
                   </p>
                 </div>
                 <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", marginBottom: 0 }}>
@@ -163,7 +168,22 @@ export default function WorkWithMePage() {
             {WORK_FAQS.map((faq, idx) => (
               <div key={idx} className="faq-item">
                 <p className="faq-question">{faq.question}</p>
-                <p className="faq-answer">{faq.answer}</p>
+                <p className="faq-answer">
+                  {faq.answer.includes(SITE_CONFIG.contactEmail) ? (
+                    <>
+                      {faq.answer.split(`mailto:${SITE_CONFIG.contactEmail}`)[0]}
+                      <a
+                        href={`mailto:${SITE_CONFIG.contactEmail}`}
+                        className="descriptive-link"
+                      >
+                        {SITE_CONFIG.contactEmail}
+                      </a>
+                      {faq.answer.split(`mailto:${SITE_CONFIG.contactEmail}`)[1]}
+                    </>
+                  ) : (
+                    faq.answer
+                  )}
+                </p>
               </div>
             ))}
           </div>

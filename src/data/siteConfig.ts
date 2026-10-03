@@ -103,11 +103,12 @@ export const SITE_CONFIG = {
   displayName: "Vee",
   handle: "@veemeta",
   role: "Chief Roar Officer at Doginal Dogs | Host on CSN",
-  xUrl: "https://x.com/veemeta",
+  xUrl: "https://x.com/veemeta?s=20",
   doginalDogsUrl: "https://www.doginaldogs.com",
   domainPlaceholder: "[CLIENT_DOMAIN]",
   legalNamePlaceholder: "[LEGAL_NAME_IF_APPROVED]",
-  contactPlaceholder: "[EMAIL_OR_BOOKING_URL]",
+  contactPlaceholder: "mailto:Veemetax@gmail.com",
+  contactEmail: "Veemetax@gmail.com",
   developerName: "Kyle Kinkin",
   developerUrl: "https://www.justduckit.xyz/work",
   defaultOgImage: "/media/vee/hero/Profpic.webp",
@@ -158,7 +159,7 @@ export const ENTITY_FAQS: FaqItem[] = [
 export const WORK_FAQS: FaqItem[] = [
   {
     question: "How can you work with Vee?",
-    answer: "Engagements are evaluated on an inquiry basis. Direct requests can be sent via [EMAIL_OR_BOOKING_URL].",
+    answer: "Engagements are evaluated on an inquiry basis. Direct requests can be sent via mailto:Veemetax@gmail.com.",
   },
   {
     question: "What types of offers does Vee consider?",

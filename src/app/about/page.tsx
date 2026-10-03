@@ -126,7 +126,7 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="descriptive-link"
               >
-                https://x.com/veemeta
+                https://x.com/veemeta?s=20
               </a>{" "}
               (Account ID: 32831485, Registered: April 18, 2009)
             </li>
