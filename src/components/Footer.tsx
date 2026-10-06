@@ -67,6 +67,11 @@ export default function Footer() {
             </a>
           </li>
           <li>
+            <Link href="/portal" className="footer-link" style={{ color: "var(--accent-gold)" }}>
+              Subscriber Portal 🔒
+            </Link>
+          </li>
+          <li>
             <Link href="/sitemap.xml" className="footer-link">
               Sitemap
             </Link>

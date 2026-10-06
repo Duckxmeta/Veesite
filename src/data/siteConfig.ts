@@ -546,3 +546,288 @@ export function getSortedArticles(): Article[] {
     return 0;
   });
 }
+
+export interface WorkbookQuiz {
+  id: string;
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
+export interface WorkbookModule {
+  number: string;
+  title: string;
+  subtitle: string;
+  summary: string;
+  keyTakeaways: string[];
+}
+
+export interface WorkbookItem {
+  id: string;
+  slug: string;
+  title: string;
+  category: "Brand & Authority" | "Environment" | "Execution" | "Storytelling & Narrative";
+  version: string;
+  fileSize: string;
+  pdfUrl: string;
+  description: string;
+  targetAudience: string;
+  modules: WorkbookModule[];
+  quizzes: WorkbookQuiz[];
+}
+
+export const WORKBOOKS_DATA: WorkbookItem[] = [
+  {
+    id: "wb-1",
+    slug: "building-authority-workbook",
+    title: "Building Authority Workbook",
+    category: "Brand & Authority",
+    version: "v1.0",
+    fileSize: "40.9 KB",
+    pdfUrl: "/workbooks/Building-Authority-Workbook.pdf",
+    description: "Practical frameworks for establishing industry expertise, trust, and premium market positioning.",
+    targetAudience: "Founders, Web3 Leaders, Content Creators, and BowDAO Members.",
+    modules: [
+      {
+        number: "01",
+        title: "The Three Pillars of Authority",
+        subtitle: "Competence, Consistency, and Character",
+        summary: "Authority is built on three non-negotiable foundations: proven competence, reliable presence, and unshakeable character.",
+        keyTakeaways: ["Competence: Proof of knowledge and results.", "Consistency: Reliable presence and messaging.", "Character: Integrity, ethics, and trust."]
+      },
+      {
+        number: "02",
+        title: "The Authority Audit",
+        subtitle: "Evaluating Market Gravity Across 5 Dimensions",
+        summary: "Audit your domain proof, stance clarity, content depth, network gravity, and emotional composure on a 1-10 scale.",
+        keyTakeaways: ["Identify your highest-leverage authority proof point.", "Score your emotional composure under public pressure.", "Eliminate low-signal distractions."]
+      },
+      {
+        number: "03",
+        title: "The Conviction Engine",
+        subtitle: "Neutrality Creates Zero Gravity",
+        summary: "True authority requires clear, defendable opinions and a non-negotiable professional code.",
+        keyTakeaways: ["Define what you believe that most people in your field get wrong.", "Establish your non-negotiable professional code.", "Balance borrowed vs owned authority."]
+      },
+      {
+        number: "04",
+        title: "The 90-Day Authority Build",
+        subtitle: "Actionable Milestones for Compounding Trust",
+        summary: "A step-by-step 90-day roadmap for publishing flagship intellectual property and building category leadership.",
+        keyTakeaways: ["Publish 1 flagship piece of original research or breakdown.", "Maintain daily live audio or text presence.", "Audit network connections every 30 days."]
+      }
+    ],
+    quizzes: [
+      {
+        id: "q-1-1",
+        question: "What are the three core pillars of authority outlined by Vee?",
+        options: [
+          "Money, Hype, and Virality",
+          "Competence, Consistency, and Character",
+          "Followers, Aesthetics, and Paid Ads",
+          "Speed, Volume, and Discounting"
+        ],
+        correctIndex: 1,
+        explanation: "Authority relies on Competence (proof of results), Consistency (reliable presence), and Character (ethics and trust)."
+      },
+      {
+        id: "q-1-2",
+        question: "Why does neutrality fail to build market authority?",
+        options: [
+          "Neutrality creates zero gravity because authority requires clear, defendable convictions.",
+          "Neutrality costs too much money to maintain.",
+          "Algorithms penalize neutral accounts automatically.",
+          "Neutrality is illegal in Web3 governance."
+        ],
+        correctIndex: 0,
+        explanation: "As Vee notes in Module 3, neutrality creates zero gravity. Authority demands clear, principled stances."
+      }
+    ]
+  },
+  {
+    id: "wb-2",
+    slug: "building-atmosphere-workbook-v2",
+    title: "Building Atmosphere Workbook (v2)",
+    category: "Environment",
+    version: "v2.0",
+    fileSize: "29.9 KB",
+    pdfUrl: "/workbooks/Building-Atmosphere-Workbook-v2.pdf",
+    description: "Crafting an engaging brand presence, live Spaces vibe, community tone, and safety ecosystem.",
+    targetAudience: "CSN Hosts, Community Managers, Event Hosts, and Voice Leaders.",
+    modules: [
+      {
+        number: "01",
+        title: "Environmental Aesthetics & Vibe",
+        subtitle: "The First 3 Seconds of First Impression",
+        summary: "Atmosphere is felt before it is understood. Design your visual, auditory, and conversational entry points.",
+        keyTakeaways: ["Set a calm, confident, and high-energy room tone.", "Use clean visual branding and consistent audio staging.", "Welcome new listeners with clear room expectations."]
+      },
+      {
+        number: "02",
+        title: "Tone of Voice & Conversational Cadence",
+        subtitle: "Balancing Warmth and Command",
+        summary: "Mastering the host posture: guiding the conversation without dominating or letting noise take over.",
+        keyTakeaways: ["Speak with deliberate cadence and zero filler.", "Acknowledge speakers quickly and manage transitions.", "Maintain poise when unexpected chaos occurs."]
+      },
+      {
+        number: "03",
+        title: "Energy Management & Safety",
+        subtitle: "Protecting Community Morale",
+        summary: "Proactively managing bad actors, toxic energy, and off-topic detours to keep the room focused on value.",
+        keyTakeaways: ["Mute or pass mic decisively when rules are broken.", "Re-anchor the core topic every 15 minutes.", "Protect active listeners from bad-faith disruption."]
+      }
+    ],
+    quizzes: [
+      {
+        id: "q-2-1",
+        question: "How frequently should a live audio host re-anchor the room's main topic?",
+        options: [
+          "Every 60 minutes",
+          "Every 15 to 20 minutes as new listeners join",
+          "Only at the very end of the broadcast",
+          "Never, listeners should figure it out"
+        ],
+        correctIndex: 1,
+        explanation: "In live audio Spaces, re-anchoring every 15-20 minutes ensures incoming audience members instantly understand room context."
+      }
+    ]
+  },
+  {
+    id: "wb-3",
+    slug: "building-momentum-workbook",
+    title: "Building Momentum Workbook",
+    category: "Execution",
+    version: "v1.0",
+    fileSize: "37.1 KB",
+    pdfUrl: "/workbooks/Building-Momentum-Workbook.pdf",
+    description: "Action plans for building consistent forward motion, launch velocity, and audience engagement.",
+    targetAudience: "Operators, Product Founders, and Growth Leads.",
+    modules: [
+      {
+        number: "01",
+        title: "Launch Velocity & Action Loops",
+        subtitle: "Turning Intent into Immediate Motion",
+        summary: "Momentum is mass in motion. Small, daily completed tasks build compound velocity faster than sporadic big launches.",
+        keyTakeaways: ["Ship daily micro-milestones.", "Reduce time between idea and execution.", "Build public proof of progress."]
+      },
+      {
+        number: "02",
+        title: "Friction Audit & Elimination",
+        subtitle: "Removing Bottlenecks to Execution",
+        summary: "Audit every step in your workflow to eliminate hesitation, complex approvals, and technical roadblocks.",
+        keyTakeaways: ["Identify top 3 friction points in your routine.", "Automate or delegate repetitive tasks.", "Set rigid start times."]
+      },
+      {
+        number: "03",
+        title: "The 90-Day Momentum Flywheel",
+        subtitle: "Self-Sustaining Community Growth",
+        summary: "Connect your execution loop directly to community conviction: Action -> Proof -> Trust -> Growth -> Action.",
+        keyTakeaways: ["Lock in 1,000 consecutive days of showing up.", "Reward consistent community contributors.", "Never break the chain."]
+      }
+    ],
+    quizzes: [
+      {
+        id: "q-3-1",
+        question: "What produces compound momentum faster in Web3 communities?",
+        options: [
+          "One massive paid influencer campaign every 6 months",
+          "Small, daily completed execution loops and persistent presence",
+          "Changing project branding every week",
+          "Hiding development progress until completion"
+        ],
+        correctIndex: 1,
+        explanation: "As demonstrated by the Doginal Dogs 1,000-day cadence, daily consistent showing up produces unshakeable compound momentum."
+      }
+    ]
+  },
+  {
+    id: "wb-4",
+    slug: "signal-and-story-workbook",
+    title: "Signal and Story Workbook",
+    category: "Storytelling & Narrative",
+    version: "v1.0",
+    fileSize: "20.7 KB",
+    pdfUrl: "/workbooks/Signal-and-Story-Workbook.pdf",
+    description: "Separating key message signals from background noise and shaping them into resonant stories.",
+    targetAudience: "Content Creators, Brand Strategists, and Copywriters.",
+    modules: [
+      {
+        number: "01",
+        title: "Signal vs Noise Filtration",
+        subtitle: "Cutting Through the Timeline Clutter",
+        summary: "Identify the 1% core truth in your industry and strip away jargon, hype words, and superficial noise.",
+        keyTakeaways: ["Focus on immutable principles over temporary trends.", "Write with absolute clarity and zero fluff.", "State the core answer in the first sentence."]
+      },
+      {
+        number: "02",
+        title: "The Core Hook & Story Arc",
+        subtitle: "Capturing Attention in 3 Seconds",
+        summary: "Structure messaging around clear conflict, transformation, and undeniable resolution.",
+        keyTakeaways: ["Hook with a bold, truthful premise.", "Deliver high-value proof in the body.", "End with a memorable call to action."]
+      }
+    ],
+    quizzes: [
+      {
+        id: "q-4-1",
+        question: "What is the primary objective of Signal filtration in brand communication?",
+        options: [
+          "To post as many words as possible",
+          "To strip away noise and state the core truth directly and clearly",
+          "To use complex technical jargon to confuse competitors",
+          "To copy competitor press releases"
+        ],
+        correctIndex: 1,
+        explanation: "Signal communication isolates the essential truth, eliminating fluff so the core value is immediately obvious."
+      }
+    ]
+  },
+  {
+    id: "wb-5",
+    slug: "the-narrative-workbook-v2",
+    title: "The Narrative Workbook (v2)",
+    category: "Storytelling & Narrative",
+    version: "v2.0",
+    fileSize: "31.1 KB",
+    pdfUrl: "/workbooks/The-Narrative-Workbook-v2.pdf",
+    description: "Core messaging architecture, founding myth, villain identification, and value alignment.",
+    targetAudience: "NFT Projects, Brand Founders, and DAO Committees.",
+    modules: [
+      {
+        number: "01",
+        title: "The Founding Creation Myth",
+        subtitle: "Stories People Want to Live Inside",
+        summary: "Every civilization-defining movement relies on an authentic creation myth that explains why the project exists.",
+        keyTakeaways: ["Anchor the myth in real sacrifices and early conviction.", "Communicate the origin story consistently.", "Make the shared identity the primary asset."]
+      },
+      {
+        number: "02",
+        title: "Villain / Enemy Identification",
+        subtitle: "What Are You Standing Against?",
+        summary: "Clarity comes from contrast. Define the anti-values (extractive VCs, short-term flipping, fake hype) your community rejects.",
+        keyTakeaways: ["Identify the industry status quo you are replacing.", "Rally the community around shared standards.", "Enforce organic cultural gravity."]
+      },
+      {
+        number: "03",
+        title: "The Core Manifesto",
+        subtitle: "Values Are What You Do When Expensive",
+        summary: "Drafting a concise, load-bearing community manifesto that guides long-term decisions through bear and bull cycles.",
+        keyTakeaways: ["Write 5 core non-negotiable principles.", "Publish the manifesto as proof of intent.", "Reward community members who live the values."]
+      }
+    ],
+    quizzes: [
+      {
+        id: "q-5-1",
+        question: "According to Vee's Narrative framework, why is a founding myth essential?",
+        options: [
+          "It allows founders to charge higher mint fees",
+          "It builds a shared story and identity that people want to live inside",
+          "It is required by legal regulators",
+          "It automates smart contract deployments"
+        ],
+        correctIndex: 1,
+        explanation: "A great founding myth creates cultural gravity, giving holders a shared identity and reason to belong that outlasts market cycles."
+      }
+    ]
+  }
+];

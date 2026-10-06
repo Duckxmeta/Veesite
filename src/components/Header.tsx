@@ -79,6 +79,17 @@ export default function Header({ currentPath }: HeaderProps) {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/portal"
+                  className={`nav-link ${
+                    currentPath === "/portal" ? "active" : ""
+                  }`}
+                  style={{ color: "var(--accent-gold)", fontWeight: 600 }}
+                >
+                  VIP Portal 🔒
+                </Link>
+              </li>
+              <li>
                 <a
                   href={SITE_CONFIG.xUrl}
                   target="_blank"
