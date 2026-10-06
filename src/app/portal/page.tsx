@@ -260,7 +260,7 @@ export default function PortalPage() {
             <div style={{ marginBottom: "16px" }}>
               <input
                 type="password"
-                placeholder="Enter Passcode (e.g. DOGE, BOWDAO)"
+                placeholder="Password Here"
                 value={passcode}
                 onChange={(e) => setPasscode(e.target.value)}
                 style={{
@@ -300,10 +300,6 @@ export default function PortalPage() {
             >
               Unlock Access &rarr;
             </button>
-
-            <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "20px" }}>
-              Passcode hint: <code>DOGE</code>, <code>BOWDAO</code>, <code>SUBSCRIBER</code>, or <code>VEEMETA</code>
-            </p>
           </form>
         </div>
       </div>
