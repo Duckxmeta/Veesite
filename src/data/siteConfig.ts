@@ -140,7 +140,7 @@ export const SITE_CONFIG = {
 export const ENTITY_FAQS: FaqItem[] = [
   {
     question: "Who is Vee?",
-    answer: "Vee is the Chief Roar Officer at Doginal Dogs and a live host on the Crypto Spaces Network (CSN). She focuses on community voice leadership, live audio broadcasting, and personal brand discipline.",
+    answer: "Vee is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). She focuses on community voice leadership, live audio broadcasting, and personal brand discipline.",
   },
   {
     question: "Who is Vee on X (@veemeta)?",
@@ -152,7 +152,7 @@ export const ENTITY_FAQS: FaqItem[] = [
   },
   {
     question: "What is the Crypto Spaces Network role?",
-    answer: "Vee serves as a regular host on the Crypto Spaces Network (CSN), conducting live interactive audio broadcasts on X. The role focuses on Web3 community discussions, Bitcoin, and direct voice engagement.",
+    answer: "Vee serves as a founding member of the Crypto Spaces Network (CSN), conducting live interactive audio broadcasts on X. The role focuses on Web3 community discussions, Bitcoin, and direct voice engagement.",
   },
 ];
 

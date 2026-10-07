@@ -5,14 +5,14 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
   title: "About Vee (@veemeta)",
   description:
-    "Professional identity, active work, and background of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host.",
+    "Professional identity, active work, and background of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
   alternates: {
     canonical: "https://[CLIENT_DOMAIN]/about",
   },
   openGraph: {
     title: "About Vee (@veemeta)",
     description:
-      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host.",
+      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
     images: [
       {
         url: MEDIA_ASSETS.headshot1.cardPath,
@@ -40,7 +40,7 @@ export default function AboutPage() {
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and host on Crypto Spaces Network (CSN).",
+      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
   };
 
   const faqSchema = {
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
           <div className="answer-lead">
             <p>
-              Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a live host on the Crypto Spaces Network (CSN). She focuses on personal brand discipline, community voice leadership, and live audio broadcasting.
+              Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). She focuses on personal brand discipline, community voice leadership, and live audio broadcasting.
             </p>
           </div>
         </section>
@@ -94,9 +94,9 @@ export default function AboutPage() {
               </div>
 
               <div className="card">
-                <h3>Host on Crypto Spaces Network (CSN)</h3>
+                <h3>Founding Member of Crypto Spaces Network (CSN)</h3>
                 <p>
-                  As a host on the Crypto Spaces Network (CSN), Vee conducts live interactive broadcasts on X. These sessions bring together collectors, builders, and community members to discuss digital assets, community strategy, and live voice media dynamics.
+                  As a founding member of the Crypto Spaces Network (CSN), Vee conducts live interactive broadcasts on X. These sessions bring together collectors, builders, and community members to discuss digital assets, community strategy, and live voice media dynamics.
                 </p>
               </div>
             </div>

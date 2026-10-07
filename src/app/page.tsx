@@ -4,16 +4,16 @@ import { SITE_CONFIG, ENTITY_FAQS, getSortedArticles, MEDIA_ASSETS } from "@/dat
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs & CSN Host",
+  title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs & CSN Founding Member",
   description:
-    "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and host on Crypto Spaces Network (CSN). Active on X since April 2009.",
+    "Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.",
   alternates: {
     canonical: "https://[CLIENT_DOMAIN]",
   },
   openGraph: {
     title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
     description:
-      "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN Spaces host.",
+      "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
     images: [
       {
         url: MEDIA_ASSETS.profpic.heroPath,
@@ -41,7 +41,7 @@ export default function HomePage() {
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a host on the Crypto Spaces Network (CSN).",
+      "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN).",
   };
 
   const faqSchema = {
@@ -68,17 +68,13 @@ export default function HomePage() {
         <section style={{ padding: "20px 0 40px" }}>
           <div className="grid-2" style={{ alignItems: "center", gap: "40px" }}>
             <div>
-              <h1>Vee | Chief Roar Officer at Doginal Dogs</h1>
+              <h1>Vee</h1>
 
               <div className="answer-lead">
                 <p>
-                  Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a host on the Crypto Spaces Network (CSN). She has maintained an active presence on X since April 18, 2009.
+                  Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
                 </p>
               </div>
-
-              <p className="sr-only">
-                This website serves as the canonical digital home for Vee. It provides an index of active initiatives, publications, and direct channels to connect.
-              </p>
             </div>
 
             <div style={{ width: "100%", height: "100%", maxHeight: "70vh", display: "flex", justifyContent: "center" }}>
