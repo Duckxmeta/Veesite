@@ -70,7 +70,7 @@ export default function HomePage() {
 
           <div className="answer-lead" style={{ margin: "24px auto 32px", textAlign: "center" }}>
             <p style={{ margin: 0 }}>
-              Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
+              @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
             </p>
           </div>
 
