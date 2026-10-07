@@ -84,7 +84,7 @@ export default function Header({ currentPath }: HeaderProps) {
                   className={`nav-link ${
                     currentPath === "/portal" ? "active" : ""
                   }`}
-                  style={{ color: "#E040FB", fontWeight: 600 }}
+                  style={{ color: "#debcff", fontWeight: 600 }}
                 >
                   VIP Portal 🔒
                 </Link>

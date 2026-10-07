@@ -67,7 +67,7 @@ export default function HomePage() {
         {/* Full-width Centered Hero Section */}
         <section style={{ padding: "48px 0 48px", textAlign: "center", width: "100%", margin: "0 auto" }}>
           <h1 style={{ fontSize: "3.25rem", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.15, marginBottom: "20px" }}>
-            It started on the <span className="text-gradient-purple">mic</span>.
+            It started on the <span style={{ color: "#64ffff" }}>mic</span>.
           </h1>
 
           <p
