@@ -68,7 +68,7 @@ export default function HomePage() {
         <section style={{ padding: "20px 0 40px" }}>
           <div className="grid-2" style={{ alignItems: "center", gap: "40px" }}>
             <div>
-              <h1>Vee — Chief Roar Officer at Doginal Dogs</h1>
+              <h1>Vee | Chief Roar Officer at Doginal Dogs</h1>
 
               <div className="answer-lead">
                 <p>

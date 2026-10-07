@@ -95,7 +95,7 @@ export default function Footer() {
           >
             {SITE_CONFIG.developerName}
           </a>
-          {" "}— Want a custom website built?{" "}
+          {" "}• Want a custom website built?{" "}
           <a
             href={SITE_CONFIG.developerUrl}
             target="_blank"
