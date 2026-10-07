@@ -76,7 +76,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <p>
+              <p className="sr-only">
                 This website serves as the canonical digital home for Vee. It provides an index of active initiatives, publications, and direct channels to connect.
               </p>
             </div>
