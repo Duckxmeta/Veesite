@@ -64,22 +64,31 @@ export default function HomePage() {
       <JsonLd data={[personSchema, faqSchema]} />
 
       <div className="container">
-        {/* Centered Hero Section */}
-        <section style={{ padding: "40px 0 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-          <h1>Vee</h1>
+        {/* Full-width Centered Hero Section */}
+        <section style={{ padding: "48px 0 48px", textAlign: "center", width: "100%", margin: "0 auto" }}>
+          <h1 style={{ fontSize: "3.25rem", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.15, marginBottom: "20px" }}>
+            It started on the <span className="text-gradient-purple">mic</span>.
+          </h1>
 
-          <div className="answer-lead" style={{ margin: "24px auto 32px", textAlign: "center" }}>
-            <p style={{ margin: 0 }}>
-              @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
-            </p>
-          </div>
+          <p
+            style={{
+              color: "var(--text-secondary)",
+              fontSize: "1.15rem",
+              maxWidth: "640px",
+              margin: "0 auto 36px",
+              lineHeight: 1.6,
+              textAlign: "center",
+            }}
+          >
+            Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
+          </p>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap", marginTop: "24px" }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
             <Link href="/about" className="btn btn-primary">
               About
             </Link>
             <Link href="/work-with-me" className="btn btn-secondary">
-              Work with Vee
+              Work with Vee &rarr;
             </Link>
           </div>
         </section>
