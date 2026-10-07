@@ -64,36 +64,23 @@ export default function HomePage() {
       <JsonLd data={[personSchema, faqSchema]} />
 
       <div className="container">
-        {/* Hero Section with Portrait */}
-        <section style={{ padding: "20px 0 40px" }}>
-          <div className="grid-2" style={{ alignItems: "center", gap: "40px" }}>
-            <div>
-              <h1>Vee</h1>
+        {/* Centered Hero Section */}
+        <section style={{ padding: "40px 0 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
+          <h1>Vee</h1>
 
-              <div className="answer-lead">
-                <p>
-                  Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
-                </p>
-              </div>
-            </div>
+          <div className="answer-lead" style={{ margin: "24px auto 32px", textAlign: "center" }}>
+            <p style={{ margin: 0 }}>
+              Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
+            </p>
+          </div>
 
-            <div style={{ width: "100%", height: "100%", maxHeight: "70vh", display: "flex", justifyContent: "center" }}>
-              <Image
-                src={MEDIA_ASSETS.profpic.heroPath}
-                alt={MEDIA_ASSETS.profpic.alt}
-                width={MEDIA_ASSETS.profpic.width}
-                height={MEDIA_ASSETS.profpic.height}
-                priority
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "70vh",
-                  objectFit: "cover",
-                  borderRadius: "var(--radius-lg)",
-                  border: "1px solid var(--border-color)",
-                }}
-              />
-            </div>
+          <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap", marginTop: "24px" }}>
+            <Link href="/about" className="btn btn-primary">
+              About
+            </Link>
+            <Link href="/work-with-me" className="btn btn-secondary">
+              Work with Vee
+            </Link>
           </div>
         </section>
 
