@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://[CLIENT_DOMAIN]";
+  const baseUrl = "https://veesite.vercel.app";
 
   return {
     rules: [

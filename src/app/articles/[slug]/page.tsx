@@ -24,7 +24,7 @@ export function generateMetadata({ params }: ArticlePageProps) {
     title: `${article.title} | Vee (@veemeta)`,
     description: article.answerLead,
     alternates: {
-      canonical: `https://[CLIENT_DOMAIN]/articles/${article.slug}`,
+      canonical: `https://veesite.vercel.app/articles/${article.slug}`,
     },
     openGraph: {
       title: article.title,
@@ -58,17 +58,18 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
     datePublished: article.date,
     dateModified: article.date,
     description: article.answerLead,
-    image: `https://[CLIENT_DOMAIN]${article.image}`,
+    image: `https://veesite.vercel.app${article.image}`,
     author: {
       "@type": "Person",
       name: SITE_CONFIG.displayName,
-      url: "https://[CLIENT_DOMAIN]",
+      alternateName: SITE_CONFIG.handle,
+      url: "https://veesite.vercel.app",
       sameAs: SITE_CONFIG.xUrl,
     },
     publisher: {
       "@type": "Person",
       name: SITE_CONFIG.displayName,
-      url: "https://[CLIENT_DOMAIN]",
+      url: "https://veesite.vercel.app",
     },
   };
 

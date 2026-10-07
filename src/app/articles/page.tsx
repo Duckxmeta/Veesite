@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Index of essays by Vee (@veemeta) covering personal brand strategy, Chief Roar Officer leadership at Doginal Dogs, live voice media, and community governance.",
   alternates: {
-    canonical: "https://[CLIENT_DOMAIN]/articles",
+    canonical: "https://veesite.vercel.app/articles",
   },
 };
 

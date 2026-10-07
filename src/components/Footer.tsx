@@ -40,8 +40,8 @@ export default function Footer() {
               >
                 Doginal Dogs
               </a>
-              . Domain:{" "}
-              <span className="placeholder-box">{SITE_CONFIG.domainPlaceholder}</span>
+               Domain:{" "}
+              <span>{SITE_CONFIG.domainPlaceholder}</span>
             </p>
           </div>
         </div>
@@ -69,6 +69,16 @@ export default function Footer() {
           <li>
             <Link href="/portal" className="footer-link" style={{ color: "var(--accent-gold)" }}>
               Subscriber Portal 🔒
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy" className="footer-link">
+              Privacy
+            </Link>
+          </li>
+          <li>
+            <Link href="/terms" className="footer-link">
+              Terms
             </Link>
           </li>
           <li>

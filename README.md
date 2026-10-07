@@ -48,7 +48,7 @@ Before deploying to production, search and replace the following placeholder tok
 
 | Placeholder Token | Description | Location in Code | Status |
 | :--- | :--- | :--- | :--- |
-| `[CLIENT_DOMAIN]` | The target production domain (e.g., `veemeta.xyz`) | `siteConfig.ts`, `layout.tsx`, `sitemap.ts`, `robots.ts`, `llms.txt` | **Pending** |
+| `[CLIENT_DOMAIN]` | The target production domain (e.g., `veesite.vercel.app`) | `siteConfig.ts`, `layout.tsx`, `sitemap.ts`, `robots.ts`, `llms.txt` | **Configured (`https://veesite.vercel.app`)** |
 | `[LEGAL_NAME_IF_APPROVED]` | Legal name (optional; omit from schema until approved) | `siteConfig.ts` | **Pending** |
 | `[EMAIL_OR_BOOKING_URL]` | Contact email (`Veemetax@gmail.com`) | `siteConfig.ts`, `/work-with-me` | **Configured (`Veemetax@gmail.com`)** |
 | `[OFFER_1]` | Title for Offer 1 (e.g. Custom Collaboration) | `siteConfig.ts`, `/work-with-me` | **Pending** |

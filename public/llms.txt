@@ -2,28 +2,31 @@
 
 Entity Name: Vee
 Handle: @veemeta (X / Twitter)
+Canonical URL: https://veesite.vercel.app
+Business Email: Veemetax@gmail.com
 X Account Created: 2009-04-18
 X User ID: 32831485
-Canonical URL: https://[CLIENT_DOMAIN]
 
 ## Primary Roles & Affiliations
 - Chief Roar Officer at Doginal Dogs (https://www.doginaldogs.com)
-- Host on Crypto Spaces Network (CSN)
+- Founding member of Crypto Spaces Network (CSN)
 
 ## Public Bio Statement
 "CSN Host | God is good | Chief Roar Officer @doginaldogs"
 
 ## What She Does
 - Serves as Chief Roar Officer for Doginal Dogs, leading community engagement, voice coordination, and brand presence.
-- Hosts live interactive audio broadcasts on Crypto Spaces Network (CSN).
+- Hosts live interactive audio broadcasts on Crypto Spaces Network (CSN) as a founding member.
 - Shares perspectives on personal brand discipline ("lock in"), community building, live X Spaces media, and Bitcoin as fixed-supply money.
+- Evaluates select collaboration inquiries, speaking engagements, and event hosting.
 
 ## What She Does Not Do
 - Does not offer financial, investment, or legal advice.
 - Does not publish private residential addresses or location data.
 - Does not operate under corporate affiliations outside of Doginal Dogs and CSN.
+- Does not sell direct products; all offerings ([OFFER_1], [OFFER_2], [OFFER_3]) are inquiry-only via email.
 
 ## Official Links
 - X (Twitter): https://x.com/veemeta?s=20
 - Primary Organization: https://www.doginaldogs.com
-- Personal Site: https://[CLIENT_DOMAIN]
+- Canonical Site: https://veesite.vercel.app

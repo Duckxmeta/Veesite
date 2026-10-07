@@ -18,12 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const getMetadataBase = () => {
-  const rawDomain = "https://[CLIENT_DOMAIN]";
-  try {
-    return new URL(rawDomain);
-  } catch {
-    return new URL("https://example.com");
-  }
+  return new URL("https://veesite.vercel.app");
 };
 
 export const metadata: Metadata = {
@@ -38,7 +33,7 @@ export const metadata: Metadata = {
     title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
     description:
       "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
-    url: "https://[CLIENT_DOMAIN]",
+    url: "https://veesite.vercel.app",
     siteName: "Vee (@veemeta)",
     images: [
       {

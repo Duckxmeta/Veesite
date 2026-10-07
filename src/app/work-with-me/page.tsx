@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Explore collaboration offers, speaking, event moderation, and strategic community advisory with Vee (@veemeta), Chief Roar Officer at Doginal Dogs.",
   alternates: {
-    canonical: "https://[CLIENT_DOMAIN]/work-with-me",
+    canonical: "https://veesite.vercel.app/work-with-me",
   },
 };
 
@@ -54,7 +54,7 @@ export default function WorkWithMePage() {
                     <span className="badge">{offer.badge}</span>
                   </div>
                   <h3 style={{ fontSize: "1.3rem", margin: "12px 0 8px" }}>
-                    <span className="placeholder-box">{offer.title}</span>
+                    <span style={{ color: "#ffe154", fontWeight: 700 }}>{offer.title}</span>
                   </h3>
                   <p style={{ fontWeight: 500, color: "var(--text-primary)" }}>
                     {offer.description}

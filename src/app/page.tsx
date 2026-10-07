@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.",
   alternates: {
-    canonical: "https://[CLIENT_DOMAIN]",
+    canonical: "https://veesite.vercel.app",
   },
   openGraph: {
     title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
@@ -31,8 +31,8 @@ export default function HomePage() {
     "@type": "Person",
     name: SITE_CONFIG.displayName,
     alternateName: SITE_CONFIG.handle,
-    url: "https://[CLIENT_DOMAIN]",
-    image: `https://[CLIENT_DOMAIN]${MEDIA_ASSETS.profpic.heroPath}`,
+    url: "https://veesite.vercel.app",
+    image: `https://veesite.vercel.app${MEDIA_ASSETS.profpic.heroPath}`,
     sameAs: [SITE_CONFIG.xUrl, SITE_CONFIG.doginalDogsUrl],
     jobTitle: "Chief Roar Officer",
     worksFor: {
