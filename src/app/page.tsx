@@ -68,9 +68,7 @@ export default function HomePage() {
         <section style={{ padding: "48px 0 48px", textAlign: "center", width: "100%", margin: "0 auto" }}>
           <h1 style={{ fontSize: "3.25rem", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.15, marginBottom: "20px" }}>
             It started on the <span style={{ color: "#64ffff" }}>mic</span>.
-          </h1>
-
-          <p
+          </h1>          <p
             style={{
               color: "var(--text-secondary)",
               fontSize: "1.15rem",
@@ -80,12 +78,12 @@ export default function HomePage() {
               textAlign: "center",
             }}
           >
-            Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.
+            Host, community leader, and the daily voice behind Doginal Dogs and the Crypto Spaces Network.
           </p>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
             <Link href="/about" className="btn btn-primary">
-              About
+              About Vee
             </Link>
             <Link href="/work-with-me" className="btn btn-secondary">
               Work with Vee &rarr;
@@ -111,10 +109,10 @@ export default function HomePage() {
                 </div>
                 <div className="card-header">
                   <h3>Doginal Dogs</h3>
-                  <span className="badge">Primary Org</span>
+                  <span className="badge">Community &amp; Voice</span>
                 </div>
                 <p>
-                  Vee serves as Chief Roar Officer at Doginal Dogs, leading community voice broadcasts, brand momentum, and direct engagement.
+                  Leading daily audio broadcasts, building community energy, and keeping the pack engaged across the Dogecoin ecosystem.
                 </p>
                 {MEDIA_ASSETS.ddveephoto.caption && (
                   <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
@@ -147,10 +145,10 @@ export default function HomePage() {
                 </div>
                 <div className="card-header">
                   <h3>Crypto Spaces Network</h3>
-                  <span className="badge badge-cyan">Live Media</span>
+                  <span className="badge badge-cyan">Live Audio</span>
                 </div>
                 <p>
-                  Regular host on CSN, conducting live audio broadcasts on X focused on Web3 communities, Bitcoin, and direct voice interaction.
+                  Hosting real, unfiltered live discussions on X covering Web3 culture, Bitcoin, and creator communities.
                 </p>
                 {MEDIA_ASSETS.ddnyc1.caption && (
                   <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
@@ -183,10 +181,10 @@ export default function HomePage() {
                 </div>
                 <div className="card-header">
                   <h3>Work with Vee</h3>
-                  <span className="badge">Direct Collaboration</span>
+                  <span className="badge">Collaborations</span>
                 </div>
                 <p>
-                  Inquire about speaking, event moderation, community strategy advisory, or collaborative voice broadcasts.
+                  Available for live audio hosting, stage speaking, community strategy, and collaborative spaces.
                 </p>
               </div>
               <Link
@@ -194,7 +192,7 @@ export default function HomePage() {
                 className="descriptive-link"
                 style={{ marginTop: "16px" }}
               >
-                Work with Vee {"→"}
+                Get in touch {"→"}
               </Link>
             </div>
           </div>
@@ -269,7 +267,7 @@ export default function HomePage() {
         <section className="faq-section">
           <h2>Frequently Asked Questions</h2>
           <p style={{ color: "var(--text-secondary)", marginTop: "-8px", marginBottom: "24px" }}>
-            Direct verification footprints and project background definitions.
+            Quick answers about Vee, the mic, and getting involved.
           </p>
           <div>
             {ENTITY_FAQS.map((faq, idx) => (

@@ -140,19 +140,19 @@ export const SITE_CONFIG = {
 export const ENTITY_FAQS: FaqItem[] = [
   {
     question: "Who is Vee?",
-    answer: "Vee is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). She focuses on community voice leadership, live audio broadcasting, and personal brand discipline.",
+    answer: "Vee is a live audio host, community leader, and the Chief Roar Officer at Doginal Dogs. She hosts daily conversations across X Spaces and Web3 communities.",
   },
   {
     question: "Who is Vee on X (@veemeta)?",
-    answer: "Vee (@veemeta) is the official account of Vee on X (formerly Twitter), registered on April 18, 2009 (user ID 32831485). The handle serves as her primary platform for live audio Spaces, community broadcasts, and public commentary.",
+    answer: "@veemeta is Vee’s main hub on X. It’s where she hosts live Spaces, breaks down market culture, and connects directly with her community.",
   },
   {
-    question: "What does Chief Roar Officer mean at Doginal Dogs?",
-    answer: "Chief Roar Officer defines the primary community engagement and voice leadership role at Doginal Dogs. The position coordinates real-time audio broadcasts, brand presence, and community morale across digital asset channels.",
+    question: "What does Chief Roar Officer mean?",
+    answer: "It means being the voice of the Doginal Dogs ecosystem—hosting community spaces, setting the daily vibe, and connecting people directly to the project.",
   },
   {
-    question: "What is the Crypto Spaces Network role?",
-    answer: "Vee serves as a founding member of the Crypto Spaces Network (CSN), conducting live interactive audio broadcasts on X. The role focuses on Web3 community discussions, Bitcoin, and direct voice engagement.",
+    question: "What is the Crypto Spaces Network?",
+    answer: "A collective of daily live audio creators on X hosting honest, open conversations on crypto, culture, and community growth.",
   },
 ];
 
@@ -178,7 +178,7 @@ export const SEED_ARTICLES: Article[] = [
     category: "Brand Governance & Strategy",
     date: "2026-09-30",
     readTime: "5 min read",
-    answerLead: "Maintaining brand autonomy requires grounding identity in clear principles rather than bending core positions to suit temporary audience feedback.",
+    answerLead: "How to build a genuine personal brand while staying true to your own voice instead of just chasing the algorithm.",
     image: "/media/vee/card/Profpic.webp",
     imageAlt: "Vee, Chief Roar Officer at Doginal Dogs, smiling outdoors in a gold sequined dress.",
     width: 800,
@@ -502,7 +502,7 @@ export const SEED_ARTICLES: Article[] = [
     category: "Doginal Dogs & Web3",
     date: "2026-02-05",
     readTime: "5 min read",
-    answerLead: "This culture analysis by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, details how daily discipline, peer network auditing, and founder consistency establish a self-reinforcing value loop within the Dogecoin ecosystem.",
+    answerLead: "A breakdown of daily discipline, routine, and what it actually takes to run a high-energy Web3 project every day.",
     image: "/media/vee/card/article17.webp",
     imageAlt: "Pixel art banner featuring Vee on a light green background with speech bubble saying Do only good everyday.",
     width: 800,
@@ -521,7 +521,7 @@ export const SEED_ARTICLES: Article[] = [
     category: "Doginal Dogs & Web3",
     date: "2026-02-06",
     readTime: "6 min read",
-    answerLead: "This market thesis by Vee (@veemeta), Chief Roar Officer at Doginal Dogs and CSN host, details how intellectual property expansion, distributed community distribution, and digital identity transform profile picture collections into durable status infrastructure.",
+    answerLead: "Why digital art and PFP communities are evolving into long-term cultural movements and real-world utility.",
     image: "/media/vee/card/article18.webp",
     imageAlt: "Pixel art banner featuring Vee on a yellow background with speech bubble displaying doginal dogs.",
     width: 800,
