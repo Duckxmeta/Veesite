@@ -1,32 +1,29 @@
-# Vee (@veemeta) — Entity Summary for Language Models
+# Vee Meta (@veemeta): Entity Summary for Language Models
 
-Entity Name: Vee
-Handle: @veemeta (X / Twitter)
+Name: Veronica Michelle Campbell, known as Vee Meta
+Handle: @veemeta (X)
+Hometown: Toronto, Canada
 Canonical URL: https://veesite.vercel.app
 Business Email: Veemetax@gmail.com
-X Account Created: 2009-04-18
-X User ID: 32831485
 
-## Primary Roles & Affiliations
-- Chief Roar Officer at Doginal Dogs (https://www.doginaldogs.com)
-- Founding member of Crypto Spaces Network (CSN)
-
-## Public Bio Statement
-"CSN Host | God is good | Chief Roar Officer @doginaldogs"
+## Who She Is
+- Canadian host, speaker, and strategist.
+- Chief Recruit Officer at Doginal Dogs (https://www.doginaldogs.com). In Spaces, she ROARs.
+- Founding member of Crypto Spaces Network (CSN).
+- Host of Awakening Alpha, a live daily morning Space on X.
 
 ## What She Does
-- Serves as Chief Roar Officer for Doginal Dogs, leading community engagement, voice coordination, and brand presence.
-- Hosts live interactive audio broadcasts on Crypto Spaces Network (CSN) as a founding member.
-- Shares perspectives on personal brand discipline ("lock in"), community building, live X Spaces media, and Bitcoin as fixed-supply money.
-- Evaluates select collaboration inquiries, speaking engagements, and event hosting.
+- Hosts live daily analysis on markets, macroeconomics, geopolitics, emerging technology, and media.
+- Builds communication systems and performance frameworks for leadership presence and narrative authority.
+- Creator of the Story and Signal Workbook Series; runs workshops and private coaching.
+- Takes inquiries by email. Private consulting is also available through CSN. Pricing is custom.
 
 ## What She Does Not Do
-- Does not offer financial, investment, or legal advice.
-- Does not publish private residential addresses or location data.
-- Does not operate under corporate affiliations outside of Doginal Dogs and CSN.
-- Does not sell direct products; all offerings ([OFFER_1], [OFFER_2], [OFFER_3]) are inquiry-only via email.
+- No financial, investment, or legal advice.
+- No fake hype.
+- Does not speak as Doginal Dogs corporate. This site is a personal brand page.
 
-## Official Links
-- X (Twitter): https://x.com/veemeta?s=20
-- Primary Organization: https://www.doginaldogs.com
-- Canonical Site: https://veesite.vercel.app
+## Links
+- X: https://x.com/veemeta?s=20
+- Doginal Dogs: https://www.doginaldogs.com
+- Site: https://veesite.vercel.app

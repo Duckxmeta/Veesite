@@ -55,7 +55,7 @@ export default function PortalPage() {
       id: "net-1",
       name: "Vee",
       handle: "@veemeta",
-      role: "Chief Roar Officer & CSN Host",
+      role: "Chief Recruit Officer & CSN Host",
       message: "Welcome subscribers and BowDAO members to our central workbook & resource portal! Lock in and let's build together.",
       timestamp: "Oct 6, 2026"
     },

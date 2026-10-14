@@ -4,16 +4,16 @@ import { SITE_CONFIG, ENTITY_FAQS, getSortedArticles, MEDIA_ASSETS } from "@/dat
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs & CSN Founding Member",
+  title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs & CSN Founding Member",
   description:
-    "Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network.",
+    "Vee — @veemeta. Chief Recruit Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.",
   alternates: {
     canonical: "https://veesite.vercel.app",
   },
   openGraph: {
-    title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
+    title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs",
     description:
-      "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
+      "Official website of Vee (@veemeta), Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
     images: [
       {
         url: MEDIA_ASSETS.profpic.heroPath,
@@ -29,19 +29,20 @@ export default function HomePage() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: SITE_CONFIG.displayName,
-    alternateName: SITE_CONFIG.handle,
+    name: SITE_CONFIG.legalName,
+    alternateName: [SITE_CONFIG.knownAs, SITE_CONFIG.handle],
+    homeLocation: { "@type": "Place", name: "Toronto, Canada" },
     url: "https://veesite.vercel.app",
     image: `https://veesite.vercel.app${MEDIA_ASSETS.profpic.heroPath}`,
     sameAs: [SITE_CONFIG.xUrl, SITE_CONFIG.doginalDogsUrl],
-    jobTitle: "Chief Roar Officer",
+    jobTitle: "Chief Recruit Officer",
     worksFor: {
       "@type": "Organization",
       name: "Doginal Dogs",
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN).",
+      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Recruit Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). Toronto, Canada.",
   };
 
   const faqSchema = {
@@ -78,7 +79,7 @@ export default function HomePage() {
               textAlign: "center",
             }}
           >
-            Host, community leader, and the daily voice behind Doginal Dogs and the Crypto Spaces Network.
+            Vee — @veemeta. Chief Recruit Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.
           </p>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
@@ -97,14 +98,14 @@ export default function HomePage() {
           <div className="grid-3">
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
+                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
                   <Image
                     src={MEDIA_ASSETS.ddveephoto.cardPath}
                     alt={MEDIA_ASSETS.ddveephoto.alt}
                     width={MEDIA_ASSETS.ddveephoto.width}
                     height={MEDIA_ASSETS.ddveephoto.height}
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
                   />
                 </div>
                 <div className="card-header">
@@ -112,7 +113,7 @@ export default function HomePage() {
                   <span className="badge">Community &amp; Voice</span>
                 </div>
                 <p>
-                  Leading daily audio broadcasts, building community energy, and keeping the pack engaged across the Dogecoin ecosystem.
+                  Recruiting the pack, rallying the crew, and roaring in Spaces. Come bark with us.
                 </p>
                 {MEDIA_ASSETS.ddveephoto.caption && (
                   <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
@@ -127,20 +128,20 @@ export default function HomePage() {
                 className="descriptive-link"
                 style={{ marginTop: "16px" }}
               >
-                Chief Roar Officer at Doginal Dogs {"→"}
+                Chief Recruit Officer at Doginal Dogs {"→"}
               </a>
             </div>
 
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
+                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
                   <Image
                     src={MEDIA_ASSETS.ddnyc1.cardPath}
                     alt={MEDIA_ASSETS.ddnyc1.alt}
                     width={MEDIA_ASSETS.ddnyc1.width}
                     height={MEDIA_ASSETS.ddnyc1.height}
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
                   />
                 </div>
                 <div className="card-header">
@@ -148,7 +149,7 @@ export default function HomePage() {
                   <span className="badge badge-cyan">Live Audio</span>
                 </div>
                 <p>
-                  Hosting real, unfiltered live discussions on X covering Web3 culture, Bitcoin, and creator communities.
+                  Founding member. We spotlight projects where the Web3 world is already tuned in.
                 </p>
                 {MEDIA_ASSETS.ddnyc1.caption && (
                   <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
@@ -169,14 +170,14 @@ export default function HomePage() {
 
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
+                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
                   <Image
                     src={MEDIA_ASSETS.headshot1.cardPath}
                     alt={MEDIA_ASSETS.headshot1.alt}
                     width={MEDIA_ASSETS.headshot1.width}
                     height={MEDIA_ASSETS.headshot1.height}
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
                   />
                 </div>
                 <div className="card-header">
@@ -184,7 +185,7 @@ export default function HomePage() {
                   <span className="badge">Collaborations</span>
                 </div>
                 <p>
-                  Available for live audio hosting, stage speaking, community strategy, and collaborative spaces.
+                  Got a project, a stage, or a big idea? Drop a note. Let's make some noise.
                 </p>
               </div>
               <Link
@@ -214,45 +215,36 @@ export default function HomePage() {
           </div>
 
           {latestArticles.length > 0 ? (
-            <div className="grid-3">
+            <div style={{ display: "flex", flexDirection: "column", gap: "24px", margin: "24px 0 40px" }}>
               {latestArticles.map((article) => (
-                <article key={article.slug} className="card">
-                  <div>
-                    <Link href={`/articles/${article.slug}`} style={{ display: "block", marginBottom: "16px" }}>
-                      <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
-                        <Image
-                          src={article.image}
-                          alt={article.imageAlt}
-                          width={article.width}
-                          height={article.height}
-                          loading="lazy"
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                      </div>
-                    </Link>
+                <article key={article.slug} className="card" style={{ flexDirection: "row", alignItems: "center", gap: "24px", flexWrap: "wrap" }}>
+                  <Link href={`/articles/${article.slug}`} style={{ display: "block", flex: "0 0 280px", maxWidth: "100%", alignSelf: "center" }}>
+                    <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
+                      <Image
+                        src={article.image}
+                        alt={article.imageAlt}
+                        width={article.width}
+                        height={article.height}
+                        loading="lazy"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      />
+                    </div>
+                  </Link>
+                  <div style={{ flex: "1 1 240px", minWidth: 0 }}>
                     <div className="card-header">
                       <span className="badge">{article.category}</span>
-                      <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                        {article.readTime}
-                      </span>
+                      <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{article.readTime}</span>
                     </div>
                     <h3 style={{ fontSize: "1.15rem", margin: "12px 0 8px" }}>
-                      <Link
-                        href={`/articles/${article.slug}`}
-                        style={{ color: "var(--text-primary)", textDecoration: "none" }}
-                      >
+                      <Link href={`/articles/${article.slug}`} style={{ color: "var(--text-primary)", textDecoration: "none" }}>
                         {article.title}
                       </Link>
                     </h3>
                     <p style={{ fontSize: "0.95rem" }}>{article.answerLead}</p>
+                    <Link href={`/articles/${article.slug}`} className="descriptive-link" style={{ fontSize: "0.9rem" }}>
+                      Read essay: {article.title} {"→"}
+                    </Link>
                   </div>
-                  <Link
-                    href={`/articles/${article.slug}`}
-                    className="descriptive-link"
-                    style={{ marginTop: "16px", fontSize: "0.9rem" }}
-                  >
-                    Read essay: {article.title} {"→"}
-                  </Link>
                 </article>
               ))}
             </div>
@@ -267,7 +259,7 @@ export default function HomePage() {
         <section className="faq-section">
           <h2>Frequently Asked Questions</h2>
           <p style={{ color: "var(--text-secondary)", marginTop: "-8px", marginBottom: "24px" }}>
-            Quick answers about Vee, the mic, and getting involved.
+            Quick answers. Fresh brew.
           </p>
           <div>
             {ENTITY_FAQS.map((faq, idx) => (

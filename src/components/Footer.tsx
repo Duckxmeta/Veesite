@@ -31,7 +31,7 @@ export default function Footer() {
               {SITE_CONFIG.displayName} ({SITE_CONFIG.handle})
             </p>
             <p style={{ margin: 0, fontSize: "0.85rem" }}>
-              Chief Roar Officer at{" "}
+              Chief Recruit Officer at{" "}
               <a
                 href={SITE_CONFIG.doginalDogsUrl}
                 target="_blank"

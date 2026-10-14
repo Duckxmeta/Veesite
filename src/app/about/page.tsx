@@ -3,16 +3,16 @@ import { SITE_CONFIG, ENTITY_FAQS, MEDIA_ASSETS } from "@/data/siteConfig";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "About Vee (@veemeta)",
+  title: "About Veronica Michelle Campbell (Vee Meta)",
   description:
-    "Professional identity, active work, and background of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
+    "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is a Canadian host, speaker, and strategist from Toronto. Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
   alternates: {
     canonical: "https://veesite.vercel.app/about",
   },
   openGraph: {
     title: "About Vee (@veemeta)",
     description:
-      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
+      "Professional identity of Vee (@veemeta), Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
     images: [
       {
         url: MEDIA_ASSETS.headshot1.cardPath,
@@ -28,19 +28,20 @@ export default function AboutPage() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: SITE_CONFIG.displayName,
-    alternateName: SITE_CONFIG.handle,
+    name: SITE_CONFIG.legalName,
+    alternateName: [SITE_CONFIG.knownAs, SITE_CONFIG.handle],
+    homeLocation: { "@type": "Place", name: "Toronto, Canada" },
     url: "https://veesite.vercel.app/about",
     image: `https://veesite.vercel.app${MEDIA_ASSETS.headshot1.cardPath}`,
     sameAs: [SITE_CONFIG.xUrl, SITE_CONFIG.doginalDogsUrl],
-    jobTitle: "Chief Roar Officer",
+    jobTitle: "Chief Recruit Officer",
     worksFor: {
       "@type": "Organization",
       name: "Doginal Dogs",
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
+      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Recruit Officer at Doginal Dogs and a founding member of Crypto Spaces Network (CSN). Toronto, Canada.",
   };
 
   const faqSchema = {
@@ -62,46 +63,39 @@ export default function AboutPage() {
 
       <div className="container">
         <section style={{ padding: "20px 0 40px" }}>
-          <h1>About Vee (@veemeta)</h1>
-
-          <div className="answer-lead">
-            <p>
-              Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). She focuses on personal brand discipline, community voice leadership, and live audio broadcasting.
-            </p>
-          </div>
+          <h1>Veronica Michelle Campbell</h1>
+          <p style={{ marginBottom: "4px" }}><strong>Known as:</strong> Vee Meta (@veemeta)</p>
+          <p><strong>Hometown:</strong> Toronto, Canada</p>
         </section>
 
-        {/* Identity & Active Work with Portrait */}
-        <section style={{ margin: "30px 0" }}>
-          <h2>Professional Identity &amp; Active Roles</h2>
-          
-          <div className="grid-2" style={{ alignItems: "flex-start", gap: "32px", marginBottom: "40px" }}>
-            <div>
-              <div className="card" style={{ marginBottom: "24px" }}>
-                <h3>Chief Roar Officer at Doginal Dogs</h3>
-                <p>
-                  At{" "}
-                  <a
-                    href={SITE_CONFIG.doginalDogsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="descriptive-link"
-                  >
-                    Doginal Dogs
-                  </a>
-                  , Vee holds the primary public communications and community voice leadership role. As Chief Roar Officer, she coordinates official community Spaces, maintains brand energy, and leads public dialogue across live media channels.
-                </p>
-              </div>
-
-              <div className="card">
-                <h3>Founding Member of Crypto Spaces Network (CSN)</h3>
-                <p>
-                  As a founding member of the Crypto Spaces Network (CSN), Vee conducts live interactive broadcasts on X. These sessions bring together collectors, builders, and community members to discuss digital assets, community strategy, and live voice media dynamics.
-                </p>
-              </div>
+        <section style={{ margin: "10px 0 40px" }}>
+          <div className="grid-2" style={{ alignItems: "flex-start", gap: "32px" }}>
+            <div className="article-body">
+              <p>
+                Veronica Michelle Campbell, known as Vee Meta, is a Canadian host, speaker, and strategist working at the intersection of media, markets, emerging technology, and culture.
+              </p>
+              <p>
+                She builds communication systems and performance frameworks that strengthen leadership presence, narrative authority, and decision-making under complexity, with a focus on Web3 and fast-moving digital environments. Her work is outcome-driven: helping individuals and teams communicate clearly, lead decisively, and perform effectively in high-stakes, public-facing contexts.
+              </p>
+              <p>
+                Vee is the host of Awakening Alpha, a live daily morning space on X covering markets, macroeconomics, geopolitics, emerging technology, and media. Through consistent live analysis, she has become known for translating complex, real-time developments into clear, actionable insight—earning a loyal audience that values signal over noise.
+              </p>
+              <p>
+                In Web3, her work extends beyond commentary into ecosystem participation and cultural development, contributing to decentralized communities, live events, and emerging digital IP. She has been an active contributor to the Doginal Dogs ecosystem, attended DDNYC 2025 and DDVEGAS 2025, and will speak at DDNYC 2026 on Dog Talk.
+              </p>
+              <p>
+                She is also the creator of the Story and Signal Workbook Series, a set of applied frameworks designed to improve narrative control, audience perception, and leadership communication. Through workshops and private coaching, she works with creators, founders, and emerging leaders to refine their public voice, strengthen authority, and increase effectiveness in digital-first environments.
+              </p>
+              <p>
+                Her work is grounded in a core belief: clarity is a competitive advantage, and culture is shaped by those who communicate it best.
+              </p>
+              <p style={{ color: "var(--text-primary)", fontWeight: 700, fontSize: "1.25rem" }}>
+                Clarity, Courage, Conviction.<br />
+                Build what matters.
+              </p>
             </div>
 
-            <div style={{ position: "relative", width: "100%", borderRadius: "var(--radius-lg)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
+            <div style={{ position: "relative", width: "100%", borderRadius: "var(--radius-lg)", overflow: "hidden", border: "1px solid var(--border-color)", display: "flex", justifyContent: "center", background: "#000" }}>
               <Image
                 src={MEDIA_ASSETS.headshot1.cardPath}
                 alt={MEDIA_ASSETS.headshot1.alt}
@@ -114,69 +108,22 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Proof Links */}
-        <section style={{ margin: "40px 0" }}>
-          <h2>Verified Proof Links</h2>
+        <section style={{ margin: "30px 0" }}>
+          <h2>Find Vee</h2>
           <ul style={{ listStyle: "none", paddingLeft: 0 }}>
             <li style={{ marginBottom: "12px" }}>
-              <strong>Official X Profile:</strong>{" "}
-              <a
-                href={SITE_CONFIG.xUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="descriptive-link"
-              >
+              <strong>X:</strong>{" "}
+              <a href={SITE_CONFIG.xUrl} target="_blank" rel="noopener noreferrer" className="descriptive-link">
                 https://x.com/veemeta?s=20
-              </a>{" "}
-              (Account ID: 32831485, Registered: April 18, 2009)
+              </a>
             </li>
             <li style={{ marginBottom: "12px" }}>
-              <strong>Primary Organization:</strong>{" "}
-              <a
-                href={SITE_CONFIG.doginalDogsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="descriptive-link"
-              >
+              <strong>Doginal Dogs:</strong>{" "}
+              <a href={SITE_CONFIG.doginalDogsUrl} target="_blank" rel="noopener noreferrer" className="descriptive-link">
                 https://www.doginaldogs.com
-              </a>{" "}
-              (Doginal Dogs Ecosystem)
+              </a>
             </li>
           </ul>
-        </section>
-
-        {/* Narrative / Story Parts with Matching Image */}
-        <section style={{ margin: "40px 0" }}>
-          <h2>Narrative &amp; Public Focus</h2>
-          <div className="grid-2" style={{ alignItems: "center", gap: "32px" }}>
-            <div style={{ background: "var(--bg-surface)", padding: "28px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-color)" }}>
-              <p>
-                <strong>Public Bio Statement:</strong> &ldquo;CSN Host | God is good | Chief Roar Officer @doginaldogs&rdquo;
-              </p>
-              <p>
-                <strong>Core Pillars:</strong> Vee&apos;s public commentary centers around personal brand discipline (&ldquo;lock in&rdquo;), community coordination, live audio broadcasting, and Bitcoin as fixed-supply money.
-              </p>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", fontStyle: "italic", marginBottom: 0 }}>
-                {/* Draft Note: Extended biographical narrative items remain in draft state pending client additions. */}
-              </p>
-            </div>
-
-            <div style={{ position: "relative", width: "100%", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
-              <Image
-                src={MEDIA_ASSETS.ddveephoto.cardPath}
-                alt={MEDIA_ASSETS.ddveephoto.alt}
-                width={MEDIA_ASSETS.ddveephoto.width}
-                height={MEDIA_ASSETS.ddveephoto.height}
-                loading="lazy"
-                style={{ width: "100%", height: "auto", objectFit: "cover" }}
-              />
-              {MEDIA_ASSETS.ddveephoto.caption && (
-                <div style={{ padding: "8px 12px", background: "rgba(0,0,0,0.7)", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
-                  {MEDIA_ASSETS.ddveephoto.caption}
-                </div>
-              )}
-            </div>
-          </div>
         </section>
 
         {/* "In the Room" Photo Strip */}

@@ -31,14 +31,14 @@ export default function TermsPage() {
           <div>
             <h2>1. Personal Brand Page</h2>
             <p>
-              This website serves as the personal brand and identity portal for Vee (@veemeta). It is not the official corporate website of Doginal Dogs or any other entity, though her role as Chief Roar Officer is accurately represented.
+              This website serves as the personal brand and identity portal for Vee (@veemeta). It is not the official corporate website of Doginal Dogs or any other entity, though her role as Chief Recruit Officer is accurately represented.
             </p>
           </div>
 
           <div>
             <h2>2. Inquiry-Only Offers</h2>
             <p>
-              All collaboration packages and service labels on this site ([OFFER_1], [OFFER_2], [OFFER_3]) represent inquiry options only. No transactions, pricing agreements, or binding commitments are formed through website browsing. Engagements are evaluated individually via email.
+              Work paths on this site are inquiry-only. No transactions, pricing agreements, or binding commitments are formed through website browsing. Engagements are evaluated individually via email.
             </p>
           </div>
 
