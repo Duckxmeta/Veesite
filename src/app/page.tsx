@@ -4,16 +4,16 @@ import { SITE_CONFIG, ENTITY_FAQS, getSortedArticles, MEDIA_ASSETS } from "@/dat
 import JsonLd from "@/components/JsonLd";
 
 export const metadata = {
-  title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs & CSN Founding Member",
+  title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs & CSN Founding Member",
   description:
-    "Vee — @veemeta. Chief Recruit Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.",
+    "Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.",
   alternates: {
     canonical: "https://veesite.vercel.app",
   },
   openGraph: {
-    title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs",
+    title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
     description:
-      "Official website of Vee (@veemeta), Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
+      "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
     images: [
       {
         url: MEDIA_ASSETS.profpic.heroPath,
@@ -23,6 +23,10 @@ export const metadata = {
       },
     ],
   },
+};
+
+const FACE_FOCUS: Record<string, string> = {
+  "personal-brand-without-getting-captured-by-the-audience": "50% 46%",
 };
 
 export default function HomePage() {
@@ -35,14 +39,14 @@ export default function HomePage() {
     url: "https://veesite.vercel.app",
     image: `https://veesite.vercel.app${MEDIA_ASSETS.profpic.heroPath}`,
     sameAs: [SITE_CONFIG.xUrl, SITE_CONFIG.doginalDogsUrl],
-    jobTitle: "Chief Recruit Officer",
+    jobTitle: "Chief Roar Officer",
     worksFor: {
       "@type": "Organization",
       name: "Doginal Dogs",
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Recruit Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). Toronto, Canada.",
+      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Roar Officer at Doginal Dogs and a founding member of the Crypto Spaces Network (CSN). Toronto, Canada.",
   };
 
   const faqSchema = {
@@ -79,7 +83,7 @@ export default function HomePage() {
               textAlign: "center",
             }}
           >
-            Vee — @veemeta. Chief Recruit Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.
+            Vee — @veemeta. Chief Roar Officer at Doginal Dogs. Founding member of Crypto Spaces Network. Toronto.
           </p>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
@@ -98,14 +102,14 @@ export default function HomePage() {
           <div className="grid-3">
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
+                <div style={{ position: "relative", width: "100%", height: "220px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
                   <Image
                     src={MEDIA_ASSETS.ddveephoto.cardPath}
                     alt={MEDIA_ASSETS.ddveephoto.alt}
-                    width={MEDIA_ASSETS.ddveephoto.width}
-                    height={MEDIA_ASSETS.ddveephoto.height}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
+                    style={{ objectFit: "cover", objectPosition: "41% 59%" }}
                   />
                 </div>
                 <div className="card-header">
@@ -113,7 +117,7 @@ export default function HomePage() {
                   <span className="badge">Community &amp; Voice</span>
                 </div>
                 <p>
-                  Recruiting the pack, rallying the crew, and roaring in Spaces. Come bark with us.
+                  Backing new voices and roaring in Spaces. Come bark with us.
                 </p>
                 {MEDIA_ASSETS.ddveephoto.caption && (
                   <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontStyle: "italic" }}>
@@ -128,20 +132,20 @@ export default function HomePage() {
                 className="descriptive-link"
                 style={{ marginTop: "16px" }}
               >
-                Chief Recruit Officer at Doginal Dogs {"→"}
+                Chief Roar Officer at Doginal Dogs {"→"}
               </a>
             </div>
 
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
+                <div style={{ position: "relative", width: "100%", height: "220px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
                   <Image
                     src={MEDIA_ASSETS.ddnyc1.cardPath}
                     alt={MEDIA_ASSETS.ddnyc1.alt}
-                    width={MEDIA_ASSETS.ddnyc1.width}
-                    height={MEDIA_ASSETS.ddnyc1.height}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
+                    style={{ objectFit: "cover", objectPosition: "48% 52%" }}
                   />
                 </div>
                 <div className="card-header">
@@ -170,14 +174,14 @@ export default function HomePage() {
 
             <div className="card">
               <div>
-                <div style={{ position: "relative", width: "100%", height: "200px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px", display: "flex", alignItems: "center", justifyContent: "center", background: "#000" }}>
+                <div style={{ position: "relative", width: "100%", height: "220px", borderRadius: "var(--radius-md)", overflow: "hidden", marginBottom: "16px" }}>
                   <Image
                     src={MEDIA_ASSETS.headshot1.cardPath}
                     alt={MEDIA_ASSETS.headshot1.alt}
-                    width={MEDIA_ASSETS.headshot1.width}
-                    height={MEDIA_ASSETS.headshot1.height}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
                     loading="lazy"
-                    style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center", margin: "0 auto" }}
+                    style={{ objectFit: "cover", objectPosition: "74% 22%" }}
                   />
                 </div>
                 <div className="card-header">
@@ -217,16 +221,16 @@ export default function HomePage() {
           {latestArticles.length > 0 ? (
             <div style={{ display: "flex", flexDirection: "column", gap: "24px", margin: "24px 0 40px" }}>
               {latestArticles.map((article) => (
-                <article key={article.slug} className="card" style={{ flexDirection: "row", alignItems: "center", gap: "24px", flexWrap: "wrap" }}>
-                  <Link href={`/articles/${article.slug}`} style={{ display: "block", flex: "0 0 280px", maxWidth: "100%", alignSelf: "center" }}>
-                    <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 9", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
+                <article key={article.slug} className="card" style={{ flexDirection: "row", alignItems: "center", gap: "28px", flexWrap: "wrap" }}>
+                  <Link href={`/articles/${article.slug}`} aria-label={article.title} style={{ display: "block", flex: "0 0 400px", maxWidth: "100%" }}>
+                    <div style={{ position: "relative", width: "100%", aspectRatio: "16 / 10", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)" }}>
                       <Image
                         src={article.image}
                         alt={article.imageAlt}
-                        width={article.width}
-                        height={article.height}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
                         loading="lazy"
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        style={{ objectFit: "cover", objectPosition: FACE_FOCUS[article.slug] || "center", transform: "scale(1.15)", transformOrigin: FACE_FOCUS[article.slug] || "center" }}
                       />
                     </div>
                   </Link>

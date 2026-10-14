@@ -31,7 +31,7 @@ export default function TermsPage() {
           <div>
             <h2>1. Personal Brand Page</h2>
             <p>
-              This website serves as the personal brand and identity portal for Vee (@veemeta). It is not the official corporate website of Doginal Dogs or any other entity, though her role as Chief Recruit Officer is accurately represented.
+              This website serves as the personal brand and identity portal for Vee (@veemeta). It is not the official corporate website of Doginal Dogs or any other entity, though her role as Chief Roar Officer is accurately represented.
             </p>
           </div>
 

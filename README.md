@@ -1,6 +1,6 @@
 # Vee (@veemeta) — GEO-First Personal Brand Website
 
-A high-performance, GEO (Generative Engine Optimization) first personal brand website built for **Vee (@veemeta)**, Chief Recruit Officer at Doginal Dogs and host on the Crypto Spaces Network (CSN).
+A high-performance, GEO (Generative Engine Optimization) first personal brand website built for **Vee (@veemeta)**, Chief Roar Officer at Doginal Dogs and host on the Crypto Spaces Network (CSN).
 
 Modeled on the information architecture and citation layer of `justduckit.xyz`.
 
@@ -12,10 +12,10 @@ Original images are preserved in `public/media/vee/originals/`. Optimized WebP d
 
 | Original Filename | Original Dimensions | Primary Placement | Alt Text | Caption / Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| `Profpic.webp` | 1100 × 1100 px | Homepage Hero (beside H1), OpenGraph Image | `"Vee, Chief Recruit Officer at Doginal Dogs, smiling outdoors in a gold sequined dress."` | Default portrait hero, high priority load. |
-| `Headshot1.webp` | 1280 × 960 px | `/about` (next to identity block), `/work-with-me` (contact block) | `"Vee, Chief Recruit Officer at Doginal Dogs, smiling outdoors against a clear sky and blue lake background."` | Outdoor close-up headshot. |
-| `DDVeephoto.webp` | 768 × 1024 px | Homepage (Doginal Dogs initiative card), `/about` (story block) | `"Vee, Chief Recruit Officer at Doginal Dogs, holding a pixel art Doginal Dog sign overhead by the waterfront."` | `"Vee presenting the official Doginal Dog sign."` |
-| `DDNYC1.webp` | 642 × 480 px | Homepage (CSN initiative card), `/about` ("In the room" strip) | `"Vee, Chief Recruit Officer at Doginal Dogs, posing in front of a Doginal Dogs event backdrop."` | `"Vee at the Doginal Dogs event backdrop."` |
+| `Profpic.webp` | 1100 × 1100 px | Homepage Hero (beside H1), OpenGraph Image | `"Vee, Chief Roar Officer at Doginal Dogs, smiling outdoors in a gold sequined dress."` | Default portrait hero, high priority load. |
+| `Headshot1.webp` | 1280 × 960 px | `/about` (next to identity block), `/work-with-me` (contact block) | `"Vee, Chief Roar Officer at Doginal Dogs, smiling outdoors against a clear sky and blue lake background."` | Outdoor close-up headshot. |
+| `DDVeephoto.webp` | 768 × 1024 px | Homepage (Doginal Dogs initiative card), `/about` (story block) | `"Vee, Chief Roar Officer at Doginal Dogs, holding a pixel art Doginal Dog sign overhead by the waterfront."` | `"Vee presenting the official Doginal Dog sign."` |
+| `DDNYC1.webp` | 642 × 480 px | Homepage (CSN initiative card), `/about` ("In the room" strip) | `"Vee, Chief Roar Officer at Doginal Dogs, posing in front of a Doginal Dogs event backdrop."` | `"Vee at the Doginal Dogs event backdrop."` |
 | `CherryDDL.webp` | 1100 × 1100 px | `/about` ("In the room" strip) | `"Doginal Dogs trading card featuring Cherry, a black dog creature with a red bow holding flags."` | `"Cherry — Doginal Dogs Trading Card."` |
 | `MaryDDL.webp` | 1266 × 1266 px | `/about` ("In the room" strip) | `"Doginal Dogs trading card featuring Mary, a brown dog creature with a pink bow."` | `"Mary — Doginal Dogs Trading Card."` |
 | `BowDAO.webp` | 1000 × 1000 px | `/about` ("In the room" strip) | `"Pixel art of a black Doginal Dog wearing a red bow on a light green background."` | `"BowDAO Doginal Dog mascot artwork."` |
@@ -61,9 +61,9 @@ Before deploying to production, search and replace the following placeholder tok
 
 - **Display Name**: Vee
 - **X Handle**: `@veemeta` (ID: 32831485, Registered 2009-04-18)
-- **Bio**: CSN Host \| God is good \| Chief Recruit Officer @doginaldogs
+- **Bio**: CSN Host \| God is good \| Chief Roar Officer @doginaldogs
 - **Primary Org**: Doginal Dogs (`https://www.doginaldogs.com`)
-- **Roles**: Chief Recruit Officer at Doginal Dogs; Host on Crypto Spaces Network (CSN)
+- **Roles**: Chief Roar Officer at Doginal Dogs; Host on Crypto Spaces Network (CSN)
 - **Public Themes**: Personal brand & "lock in", faith, Doginal Dogs / Pack, live X Spaces, Bitcoin as fixed-supply money, community building.
 
 ---

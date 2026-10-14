@@ -553,3 +553,58 @@ p {
     text-align: center;
   }
 }
+
+/* Work page flow */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(222, 188, 255, 0.1);
+  border: 1px solid rgba(222, 188, 255, 0.35);
+  color: #debcff;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.work-hero { text-align: center; max-width: 880px; margin: 0 auto; padding: 24px 0 8px; }
+.work-hero h1 { font-size: 3.75rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.12; margin: 20px 0; }
+.work-deck { font-size: 1.25rem; line-height: 1.6; color: var(--text-secondary); max-width: 720px; margin: 0 auto 28px; }
+.work-section { margin: 80px 0; }
+.work-section-head { text-align: center; max-width: 760px; margin: 0 auto 36px; }
+.work-section-head h2 { font-size: 3rem; font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; margin: 16px 0 0; }
+.work-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; }
+.work-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.work-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  transition: border-color 0.25s ease;
+}
+.work-card:hover { border-color: rgba(222, 188, 255, 0.5); }
+.work-card h3 { font-size: 1.5rem; font-weight: 800; margin: 16px 0 12px; }
+.work-card h3.num-title { font-size: 1.25rem; }
+.work-num { font-family: var(--font-mono); font-size: 2rem; font-weight: 800; color: #ffe154; }
+.work-result {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(222, 188, 255, 0.08);
+  border: 1px solid rgba(222, 188, 255, 0.3);
+}
+.work-result .label { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #debcff; }
+.work-result .text { font-weight: 700; color: var(--text-primary); }
+.work-check { list-style: none; display: grid; gap: 12px; color: var(--text-secondary); }
+.work-check li::before { content: "✓ "; color: #debcff; font-weight: 800; }
+@media (max-width: 768px) {
+  .work-hero h1 { font-size: 2.4rem; }
+  .work-section-head h2 { font-size: 2rem; }
+  .work-card { padding: 24px; }
+}

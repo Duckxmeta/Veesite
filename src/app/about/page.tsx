@@ -5,14 +5,14 @@ import JsonLd from "@/components/JsonLd";
 export const metadata = {
   title: "About Veronica Michelle Campbell (Vee Meta)",
   description:
-    "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is a Canadian host, speaker, and strategist from Toronto. Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
+    "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is a Canadian host, speaker, and strategist from Toronto. Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
   alternates: {
     canonical: "https://veesite.vercel.app/about",
   },
   openGraph: {
     title: "About Vee (@veemeta)",
     description:
-      "Professional identity of Vee (@veemeta), Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
+      "Professional identity of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
     images: [
       {
         url: MEDIA_ASSETS.headshot1.cardPath,
@@ -34,14 +34,14 @@ export default function AboutPage() {
     url: "https://veesite.vercel.app/about",
     image: `https://veesite.vercel.app${MEDIA_ASSETS.headshot1.cardPath}`,
     sameAs: [SITE_CONFIG.xUrl, SITE_CONFIG.doginalDogsUrl],
-    jobTitle: "Chief Recruit Officer",
+    jobTitle: "Chief Roar Officer",
     worksFor: {
       "@type": "Organization",
       name: "Doginal Dogs",
       url: SITE_CONFIG.doginalDogsUrl,
     },
     description:
-      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Recruit Officer at Doginal Dogs and a founding member of Crypto Spaces Network (CSN). Toronto, Canada.",
+      "Veronica Michelle Campbell, known as Vee Meta (@veemeta), is Chief Roar Officer at Doginal Dogs and a founding member of Crypto Spaces Network (CSN). Toronto, Canada.",
   };
 
   const faqSchema = {

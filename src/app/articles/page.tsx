@@ -5,7 +5,7 @@ import { getSortedArticles } from "@/data/siteConfig";
 export const metadata = {
   title: "Essays & Articles by Vee (@veemeta)",
   description:
-    "Index of essays by Vee (@veemeta) covering personal brand strategy, Chief Recruit Officer leadership at Doginal Dogs, live voice media, and community governance.",
+    "Index of essays by Vee (@veemeta) covering personal brand strategy, Chief Roar Officer leadership at Doginal Dogs, live voice media, and community governance.",
   alternates: {
     canonical: "https://veesite.vercel.app/articles",
   },

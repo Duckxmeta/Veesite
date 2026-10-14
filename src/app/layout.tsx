@@ -24,15 +24,15 @@ const getMetadataBase = () => {
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: {
-    default: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs & CSN Founding Member",
+    default: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs & CSN Founding Member",
     template: "%s | Vee (@veemeta)",
   },
   description:
-    "Vee (@veemeta) is the Chief Recruit Officer at Doginal Dogs and founding member of the Crypto Spaces Network (CSN). Personal brand, live audio Spaces, and community leadership.",
+    "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and founding member of the Crypto Spaces Network (CSN). Personal brand, live audio Spaces, and community leadership.",
   openGraph: {
-    title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs",
+    title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
     description:
-      "Official website of Vee (@veemeta), Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
+      "Official website of Vee (@veemeta), Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network.",
     url: "https://veesite.vercel.app",
     siteName: "Vee (@veemeta)",
     images: [
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vee (@veemeta) | Chief Recruit Officer at Doginal Dogs",
+    title: "Vee (@veemeta) | Chief Roar Officer at Doginal Dogs",
     description:
-      "Vee (@veemeta) is the Chief Recruit Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
+      "Vee (@veemeta) is the Chief Roar Officer at Doginal Dogs and founding member of Crypto Spaces Network (CSN).",
     creator: "@veemeta",
     images: ["/Veebanner.jpg"],
   },
