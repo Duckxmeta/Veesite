@@ -145,10 +145,11 @@ export default function WorkWithMePage() {
               </div>
               <div style={{ maxWidth: "240px", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)", margin: "0 auto" }}>
                 <Image
-                  src={MEDIA_ASSETS.headshot1.thumbPath}
-                  alt={MEDIA_ASSETS.headshot1.alt}
-                  width={MEDIA_ASSETS.headshot1.width}
-                  height={MEDIA_ASSETS.headshot1.height}
+                  src="/media/vee/subs/veeGIF.gif"
+                  alt="Vee waving hello in an animated clip."
+                  width={1080}
+                  height={1080}
+                  unoptimized
                   loading="lazy"
                   style={{ width: "100%", height: "auto", objectFit: "cover" }}
                 />
