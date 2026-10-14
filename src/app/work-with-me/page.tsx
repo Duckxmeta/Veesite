@@ -219,14 +219,11 @@ export default function WorkWithMePage() {
                   Subscribe on X
                 </a>
               </div>
-              <div style={{ position: "relative", width: "100%", maxWidth: "280px", aspectRatio: "1 / 1", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)", margin: "0 auto" }}>
-                <Image
-                  src="/media/vee/subs/vee-face.webp"
-                  alt="Vee laughing, looking up."
-                  fill
-                  sizes="280px"
-                  loading="lazy"
-                  style={{ objectFit: "cover", objectPosition: "50% 35%" }}
+              <div style={{ width: "100%", maxWidth: "280px", aspectRatio: "1 / 1", borderRadius: "var(--radius-md)", overflow: "hidden", border: "1px solid var(--border-color)", margin: "0 auto", background: "#debcff" }}>
+                <img
+                  src="/media/vee/subs/vee-microphone-check.gif"
+                  alt="Pixel dog on the mic."
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </div>
             </div>
