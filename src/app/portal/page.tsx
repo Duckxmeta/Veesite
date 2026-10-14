@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { WORKBOOKS_DATA, WorkbookItem, WorkbookQuiz, SITE_CONFIG } from "@/data/siteConfig";
+import { supabase } from "@/lib/supabase";
 
 const VALID_PASSCODES = ["DOGE", "BOWDAO", "SUBSCRIBER", "VEEMETA", "PACK"];
 
@@ -20,13 +21,24 @@ interface CustomWorkbook {
   isCustom?: boolean;
 }
 
-interface NetworkPost {
+interface ChatMessage {
   id: string;
-  name: string;
-  handle: string;
-  role: string;
-  message: string;
-  timestamp: string;
+  display_name: string;
+  handle: string | null;
+  body: string;
+  is_vee: boolean;
+  created_at: string;
+}
+
+interface WorkbookComment {
+  id: string;
+  workbook_slug: string;
+  display_name: string;
+  handle: string | null;
+  body: string;
+  is_vee: boolean;
+  parent_id: string | null;
+  created_at: string;
 }
 
 export default function PortalPage() {
@@ -50,24 +62,12 @@ export default function PortalPage() {
 
   // Custom Workbooks & Networking state
   const [allWorkbooks, setAllWorkbooks] = useState<(WorkbookItem | CustomWorkbook)[]>(WORKBOOKS_DATA);
-  const [networkPosts, setNetworkPosts] = useState<NetworkPost[]>([
-    {
-      id: "net-1",
-      name: "Vee",
-      handle: "@veemeta",
-      role: "Chief Roar Officer & CSN Host",
-      message: "Welcome subscribers and BowDAO members to our central workbook & resource portal! Lock in and let's build together.",
-      timestamp: "Oct 6, 2026"
-    },
-    {
-      id: "net-2",
-      name: "BowDAO Member #88",
-      handle: "@bowdao_official",
-      role: "BowDAO Governance",
-      message: "Excited to access the updated Authority & Atmosphere workbooks directly on veemeta.xyz!",
-      timestamp: "Oct 6, 2026"
-    }
-  ]);
+  const [networkPosts, setNetworkPosts] = useState<ChatMessage[]>([]);
+  const [comments, setComments] = useState<WorkbookComment[]>([]);
+  const [displayName, setDisplayName] = useState("");
+  const [commentBody, setCommentBody] = useState("");
+  const [replyTo, setReplyTo] = useState<string | null>(null);
+  const [roomError, setRoomError] = useState("");
 
   // Form for adding new workbook
   const [newTitle, setNewTitle] = useState("");
@@ -78,9 +78,7 @@ export default function PortalPage() {
   const [newAudience, setNewAudience] = useState("Subscribers & BowDAO Members");
 
   // Networking form
-  const [postName, setPostName] = useState("");
   const [postHandle, setPostHandle] = useState("");
-  const [postRole, setPostRole] = useState("");
   const [postMessage, setPostMessage] = useState("");
 
   // Load persistence
@@ -97,10 +95,10 @@ export default function PortalPage() {
         setAllWorkbooks([...WORKBOOKS_DATA, ...parsed]);
       }
 
-      const storedPosts = localStorage.getItem("vee_network_posts");
-      if (storedPosts) {
-        setNetworkPosts(JSON.parse(storedPosts));
-      }
+      const storedName = localStorage.getItem("vee_display_name");
+      if (storedName) setDisplayName(storedName);
+      const storedHandle = localStorage.getItem("vee_handle");
+      if (storedHandle) setPostHandle(storedHandle);
     } catch (e) {
       console.error(e);
     } finally {
@@ -134,6 +132,49 @@ export default function PortalPage() {
       console.error(e);
     }
   };
+
+  const isVeeIdentity = (name: string, handle: string) => {
+    const n = name.trim().toLowerCase();
+    const h = handle.trim().toLowerCase().replace(/^@/, "");
+    return n === "vee" || n === "vee meta" || h === "veemeta";
+  };
+
+  const loadMessages = async () => {
+    if (!supabase) return;
+    const { data, error } = await supabase
+      .from("messages")
+      .select("id, display_name, handle, body, is_vee, created_at")
+      .order("created_at", { ascending: true })
+      .limit(200);
+    if (error) {
+      setRoomError(error.message);
+      return;
+    }
+    setRoomError("");
+    setNetworkPosts((data || []) as ChatMessage[]);
+  };
+
+  const loadComments = async (slug: string) => {
+    if (!supabase) return;
+    const { data, error } = await supabase
+      .from("workbook_comments")
+      .select("id, workbook_slug, display_name, handle, body, is_vee, parent_id, created_at")
+      .eq("workbook_slug", slug)
+      .order("created_at", { ascending: true });
+    if (!error) setComments((data || []) as WorkbookComment[]);
+  };
+
+  useEffect(() => {
+    if (!isUnlocked) return;
+    loadMessages();
+    const timer = setInterval(loadMessages, 4000);
+    return () => clearInterval(timer);
+  }, [isUnlocked]);
+
+  useEffect(() => {
+    if (activeReader) loadComments(activeReader.slug);
+    else setComments([]);
+  }, [activeReader]);
 
   // Handle Add Custom Workbook
   const handleAddWorkbook = (e: React.FormEvent) => {
@@ -171,39 +212,69 @@ export default function PortalPage() {
   };
 
   // Handle Submit Networking Post
-  const handleAddPost = (e: React.FormEvent) => {
+  const handleAddPost = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!postName.trim() || !postMessage.trim()) return;
-
-    const newPost: NetworkPost = {
-      id: `post-${Date.now()}`,
-      name: postName.trim(),
-      handle: postHandle.trim().startsWith("@") ? postHandle.trim() : `@${postHandle.trim() || "subscriber"}`,
-      role: postRole.trim() || "Subscriber / BowDAO Member",
-      message: postMessage.trim(),
-      timestamp: "Just now"
-    };
-
-    const updated = [newPost, ...networkPosts];
-    setNetworkPosts(updated);
-    try {
-      localStorage.setItem("vee_network_posts", JSON.stringify(updated));
-    } catch (e) {
-      console.error(e);
+    if (!displayName.trim() || !postMessage.trim()) return;
+    if (!supabase) {
+      setRoomError("Supabase is not configured on this deployment.");
+      return;
     }
-
-    setPostName("");
-    setPostHandle("");
-    setPostRole("");
+    const handle = postHandle.trim()
+      ? (postHandle.trim().startsWith("@") ? postHandle.trim() : `@${postHandle.trim()}`)
+      : null;
+    const { error } = await supabase.from("messages").insert({
+      display_name: displayName.trim(),
+      handle,
+      body: postMessage.trim(),
+      is_vee: isVeeIdentity(displayName, postHandle)
+    });
+    if (error) {
+      setRoomError(error.message);
+      return;
+    }
+    try {
+      localStorage.setItem("vee_display_name", displayName.trim());
+      if (handle) localStorage.setItem("vee_handle", handle);
+    } catch (err) {
+      console.error(err);
+    }
     setPostMessage("");
+    loadMessages();
+  };
+
+  const handleAddComment = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!activeReader || !displayName.trim() || !commentBody.trim() || !supabase) return;
+    const handle = postHandle.trim()
+      ? (postHandle.trim().startsWith("@") ? postHandle.trim() : `@${postHandle.trim()}`)
+      : null;
+    const { error } = await supabase.from("workbook_comments").insert({
+      workbook_slug: activeReader.slug,
+      display_name: displayName.trim(),
+      handle,
+      body: commentBody.trim(),
+      is_vee: isVeeIdentity(displayName, postHandle),
+      parent_id: replyTo
+    });
+    if (error) {
+      setRoomError(error.message);
+      return;
+    }
+    setCommentBody("");
+    setReplyTo(null);
+    loadComments(activeReader.slug);
   };
 
   // Filtered workbooks
   const filteredWorkbooks = allWorkbooks.filter((wb) => {
     const matchesCat = selectedCategory === "All" || wb.category === selectedCategory;
+    const q = searchQuery.toLowerCase();
     const matchesQuery =
-      wb.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      wb.description.toLowerCase().includes(searchQuery.toLowerCase());
+      !q ||
+      wb.title.toLowerCase().includes(q) ||
+      wb.description.toLowerCase().includes(q) ||
+      wb.category.toLowerCase().includes(q) ||
+      (wb.version || "").toLowerCase().includes(q);
     return matchesCat && matchesQuery;
   });
 
@@ -633,9 +704,9 @@ export default function PortalPage() {
             <div className="grid-2" style={{ gap: "12px", marginBottom: "12px" }}>
               <input
                 type="text"
-                placeholder="Your Name (e.g. Vee)"
-                value={postName}
-                onChange={(e) => setPostName(e.target.value)}
+                placeholder="Your name"
+                value={displayName}
+                onChange={(e) => setDisplayName(e.target.value)}
                 required
                 style={{
                   padding: "10px 14px",
@@ -651,23 +722,6 @@ export default function PortalPage() {
                 value={postHandle}
                 onChange={(e) => setPostHandle(e.target.value)}
                 style={{
-                  padding: "10px 14px",
-                  borderRadius: "var(--radius-sm)",
-                  border: "1px solid var(--border-color)",
-                  background: "var(--bg-primary)",
-                  color: "var(--text-primary)"
-                }}
-              />
-            </div>
-
-            <div style={{ marginBottom: "12px" }}>
-              <input
-                type="text"
-                placeholder="Role / Title (e.g. BowDAO Member, CSN Host)"
-                value={postRole}
-                onChange={(e) => setPostRole(e.target.value)}
-                style={{
-                  width: "100%",
                   padding: "10px 14px",
                   borderRadius: "var(--radius-sm)",
                   border: "1px solid var(--border-color)",
@@ -714,17 +768,19 @@ export default function PortalPage() {
 
           {/* Posts Feed */}
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            {roomError && <p style={{ color: "#f87171" }}>{roomError}</p>}
+            {networkPosts.length === 0 && <p style={{ color: "var(--text-muted)" }}>No messages yet. Say hey.</p>}
             {networkPosts.map((post) => (
               <div key={post.id} className="card">
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "8px" }}>
                   <div>
-                    <strong style={{ color: "var(--text-primary)", fontSize: "1.05rem" }}>{post.name}</strong>{" "}
+                    <strong style={{ color: post.is_vee ? "#debcff" : "var(--text-primary)", fontSize: "1.05rem" }}>{post.display_name}</strong>{" "}
+                    {post.is_vee && <span style={{ color: "#debcff", fontSize: "0.75rem" }}>Vee</span>}{" "}
                     <span style={{ color: "var(--accent-gold)", fontSize: "0.9rem" }}>{post.handle}</span>
-                    <p style={{ margin: "2px 0 0", fontSize: "0.8rem", color: "var(--text-muted)" }}>{post.role}</p>
                   </div>
-                  <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>{post.timestamp}</span>
+                  <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>{new Date(post.created_at).toLocaleString()}</span>
                 </div>
-                <p style={{ margin: 0, color: "var(--text-secondary)", lineHeight: "1.6" }}>{post.message}</p>
+                <p style={{ margin: 0, color: "var(--text-secondary)", lineHeight: "1.6" }}>{post.body}</p>
               </div>
             ))}
           </div>
@@ -865,6 +921,34 @@ export default function PortalPage() {
                   </div>
                 </div>
               )}
+
+              <div style={{ marginTop: "28px" }}>
+                <h3 style={{ fontSize: "1.2rem", marginBottom: "12px" }}>Comments</h3>
+                {comments.filter((c) => !c.parent_id).map((c) => (
+                  <div key={c.id} style={{ marginBottom: "14px" }}>
+                    <p style={{ margin: 0 }}>
+                      <strong style={{ color: c.is_vee ? "#debcff" : "var(--text-primary)" }}>{c.display_name}</strong>
+                      {c.is_vee && <span style={{ color: "#debcff" }}> Vee</span>}
+                      <span style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}> {c.handle}</span>
+                    </p>
+                    <p style={{ margin: "4px 0", color: "var(--text-secondary)" }}>{c.body}</p>
+                    <button type="button" onClick={() => setReplyTo(c.id)} style={{ background: "none", border: "none", color: "#64ffff", cursor: "pointer", padding: 0 }}>Reply</button>
+                    {comments.filter((r) => r.parent_id === c.id).map((r) => (
+                      <div key={r.id} style={{ marginLeft: "18px", marginTop: "8px", borderLeft: "2px solid #debcff", paddingLeft: "10px" }}>
+                        <strong style={{ color: r.is_vee ? "#debcff" : "var(--text-primary)" }}>{r.display_name}</strong>
+                        {r.is_vee && <span style={{ color: "#debcff" }}> Vee</span>}
+                        <p style={{ margin: "4px 0", color: "var(--text-secondary)" }}>{r.body}</p>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+                <form onSubmit={handleAddComment} style={{ marginTop: "12px" }}>
+                  <input value={displayName} onChange={(e) => setDisplayName(e.target.value)} placeholder="Your name" required style={{ width: "100%", marginBottom: "8px", padding: "10px", background: "var(--bg-primary)", color: "var(--text-primary)", border: "1px solid var(--border-color)", borderRadius: "8px" }} />
+                  <textarea value={commentBody} onChange={(e) => setCommentBody(e.target.value)} placeholder={replyTo ? "Reply as Vee or subscriber" : "Comment on this workbook"} required rows={3} style={{ width: "100%", marginBottom: "8px", padding: "10px", background: "var(--bg-primary)", color: "var(--text-primary)", border: "1px solid var(--border-color)", borderRadius: "8px" }} />
+                  <button type="submit" style={{ padding: "8px 14px", background: "#debcff", color: "#000", border: "none", borderRadius: "8px", fontWeight: 700, cursor: "pointer" }}>{replyTo ? "Send reply" : "Post comment"}</button>
+                  {replyTo && <button type="button" onClick={() => setReplyTo(null)} style={{ marginLeft: "8px", background: "none", border: "none", color: "var(--text-secondary)", cursor: "pointer" }}>Cancel reply</button>}
+                </form>
+              </div>
             </div>
           </div>
         </div>
